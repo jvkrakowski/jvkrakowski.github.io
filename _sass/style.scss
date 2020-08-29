@@ -1,0 +1,968 @@
+/* Tinker
+* Created By: J.V Krakowski
+* github.com/jvkrakowski/tinker
+* Liscense: MIT License
+*
+* TABLE OF CONTENTS 
+* Basics
+* Contiainer, Section and Wrapper
+* Header
+* Typography
+** Paragraph
+** Lists
+** Pre and Code
+** Dictionary 
+** Typography Alignment
+* Links
+* Navigation
+* Row
+* Column Reverse
+* Column XS
+* Column XS Offset
+* XS Position
+* Column Small - For screens with a minimum width of 768px
+* Column Medium - For screens with a minimum width of 992px
+* Column Large - For screens with a minimum width of 1200px
+*/
+
+/* Basics */
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-size: 1em;
+    font-family: aileron, sans-serif;
+    font-weight: normal;
+    background: #ffffff url('/assets/img/panda.jpg') repeat center center;
+    background-size: cover;
+    
+}
+
+/* Container, Section and Wrapper */
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+}
+
+section {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+} 
+
+.container section {
+    margin: .6rem;
+}
+
+.wrapper {
+    width: 65%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1rem;
+    padding-left: 2rem;
+    background: #ffffff;
+    border: solid 4px #000;
+}
+
+.space {
+    height: 120px;
+    width: 90%;
+    clear: both;
+}
+
+.divide {
+    height: 30px;
+    width: 90%;
+    clear: both; 
+}
+
+.sml-divide {
+    height: 10px;
+    width: 90%;
+    clear: both;
+}
+
+/* Header */ 
+
+header {
+    min-height: 100px;
+    text-align: center;
+    background: #ecf0f1;
+    box-sizing: border-box;
+    padding: 2rem;
+    margin-left: -1rem;
+    box-sizing: border-box;
+    background: #bdc3c7;
+}
+
+h1.site-title {
+    font-size: 10em;
+    line-height: 1em;
+    margin: 0;
+    padding-bottom: 0;
+    font-weight: 300;
+}
+
+p.last-name {
+    font-size: 5.4em;
+    line-height: 1em;
+    margin: 0;
+    padding-top: 0;
+    font-weight: 300;
+}
+
+.wrapper header {
+    margin-left: -2rem;
+    margin-right: -1rem;
+}
+
+
+/* Footer */ 
+
+footer p.footer-message {
+    text-align: center;
+    font-size: .7em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+
+/* Typography */
+
+h1, h2, h3, h4 {
+    font-weight: 400;
+}
+
+blockquote {
+    border-left: 2px solid grey;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    height: auto;
+}
+
+span.credit {
+    clear: both; 
+    display: block;
+    text-align: right; 
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    padding: 25px;
+}
+
+.section-title {
+    font-weight: 300;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 2px solid #212121;
+    text-transform: uppercase;
+}
+
+p.first {
+    font-size: 1.5em;
+    line-height: 1em;
+    padding: 0;
+    margin:0;
+    font-weight: 300;
+}
+
+p.second {
+    font-size: 1em;
+    line-height: 1em;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2em;
+}
+
+p.intro {
+    font-size: 1.5em;
+    line-height: 1em;
+    padding: 0;
+    margin:0;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+    font-weight: 300;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+td {
+    padding: 15px;
+    padding-top: 5px;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+/* Paragraph */ 
+
+p.first-paragraph {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.first-letter {
+    float: left;
+  font-size: 5rem;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+/* Lists */ 
+
+ul.big {
+    font-size: 1.5rem;
+}
+
+/* Pre and Code */
+
+code {
+    background: #eee;
+    max-width: 60%; 
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Dictionary */ 
+
+dl {
+    max-width: 80%; 
+    margin-left: 2rem;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+dd {
+    margin-bottom: 1rem;
+}
+
+
+/* Typography Alignments */ 
+
+.center {
+    text-align: center;
+}
+
+/* Images */ 
+
+img[align="left"] {
+    margin-right: .7rem; 
+}
+
+img[align="right"] {
+    margin-left: .5rem; /* for firefox */ 
+}
+
+img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+img.main {
+    width: 50%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+/* Links */ 
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    font-style: italic;
+    font-weight: bold;
+}
+
+a:active {
+    opacity: .5;
+}
+
+a:visited {
+    
+}
+
+/* Navigation */ 
+
+nav {
+    background: #000000;
+    margin-left: -2rem; 
+    margin-right: -1rem;
+    margin-top: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: auto;
+    text-align: center;
+}
+
+nav a {
+    margin: 0; 
+    margin-right: .5rem;
+    padding: 0; 
+    font-weight: normal;
+    color: #fff;
+}
+
+.container nav {
+    margin: 0; 
+    margin-left: -1rem;
+}
+
+/* Row */
+
+.row {
+    box-sizing: border-box; 
+    display: flex;
+    -ms-flex: 0 1 auto; 
+    flex: 0 1 auto; 
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -1rem;  
+}
+
+/* Column XS */
+
+
+div[class|="col-xs-"] {
+    box-sizing: border-box;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.col-xs {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+}
+
+.col-xs-1 {
+  flex-basis: 8.333%;
+  max-width: 8.333%;
+}
+
+.col-xs-2 {
+  flex-basis: 16.667%;
+  max-width: 16.667%;
+}
+
+.col-xs-3 {
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+.col-xs-4 {
+  flex-basis: 33.333%;
+  max-width: 33.333%;
+}
+
+.col-xs-5 {
+  flex-basis: 41.667%;
+  max-width: 41.667%;
+}
+
+.col-xs-6 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.col-xs-7 {
+  flex-basis: 58.333%;
+  max-width: 58.333%;
+}
+
+.col-xs-8 {
+  flex-basis: 66.667%;
+  max-width: 66.667%;
+}
+
+.col-xs-9 {
+  flex-basis: 75%;
+  max-width: 75%;
+}
+
+.col-xs-10 {
+  flex-basis: 83.333%;
+  max-width: 83.333%;
+}
+
+.col-xs-11 {
+  flex-basis: 91.667%;
+  max-width: 91.667%;
+}
+
+.col-xs-12 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+/* Column XS Offset */
+
+.col-xs-offset-1 {
+  margin-left: 8.333%;
+}
+
+.col-xs-offset-2 {
+  margin-left: 16.667%;
+}
+
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+.col-xs-offset-4 {
+  margin-left: 33.333%;
+}
+
+.col-xs-offset-5 {
+  margin-left: 41.667%;
+}
+
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+.col-xs-offset-7 {
+  margin-left: 58.333%;
+}
+
+.col-xs-offset-8 {
+  margin-left: 66.667%;
+}
+
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+.col-xs-offset-10 {
+  margin-left: 83.333%;
+}
+
+.col-xs-offset-11 {
+  margin-left: 91.667%;
+}
+
+/* XS Position */
+
+.start-xs {
+  -ms-flex-pack: start;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.center-xs {
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.end-xs {
+  -ms-flex-pack: end;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.around-xs {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.between-xs {
+  justify-content: space-between;
+}
+
+/* Column Small - For screens with a minimum width of 768px */
+
+@media only screen and (min-width: 48em) {
+    nav a {
+    }
+    
+    div[class|="col-sm-"] {
+        box-sizing: border-box;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+    }
+    /* columns sm  */
+    
+    .col-sm {
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+        flex-basis: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+    }
+    
+    .col-sm-1 {
+        flex-basis: 8.333%;
+        max-width: 8.333%;
+      }
+
+    .col-sm-2 {
+        flex-basis: 16.667%;
+        max-width: 16.667%;
+    }
+
+    .col-sm-3 {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+
+    .col-sm-4 {
+        flex-basis: 33.333%;
+        max-width: 33.333%;
+    }
+
+    .col-sm-5 {
+        flex-basis: 41.667%;
+        max-width: 41.667%;
+    }
+
+    .col-sm-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .col-sm-7 {
+        flex-basis: 58.333%;
+        max-width: 58.333%;
+    }
+
+    .col-sm-8 {
+        flex-basis: 66.667%;
+        max-width: 66.667%;
+    }
+
+    .col-sm-9 {
+        flex-basis: 75%;
+        max-width: 75%;
+    }
+
+    .col-sm-10 {
+        flex-basis: 83.333%;
+        max-width: 83.333%;
+    }
+
+    .col-sm-11 {
+        flex-basis: 91.667%;
+        max-width: 91.667%;
+    }
+
+    .col-sm-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    
+    /* SM Offset */
+    
+    .col-sm-offset-1 {
+        margin-left: 8.333%;
+    }
+
+    .col-sm-offset-2 {
+        margin-left: 16.667%;
+    }
+
+    .col-sm-offset-3 {
+        margin-left: 25%;
+    }
+
+    .col-sm-offset-4 {
+        margin-left: 33.333%;
+    }
+
+    .col-sm-offset-5 {
+        margin-left: 41.667%;
+    }
+
+    .col-sm-offset-6 {
+        margin-left: 50%;
+    }
+
+    .col-sm-offset-7 {
+        margin-left: 58.333%;
+    }
+
+    .col-sm-offset-8 {
+        margin-left: 66.667%;
+    }
+
+    .col-sm-offset-9 {
+        margin-left: 75%;
+    }
+
+    .col-sm-offset-10 {
+        margin-left: 83.333%;
+    }
+
+    .col-sm-offset-11 {
+        margin-left: 91.667%;
+    }
+    
+    /* SM Position */
+    
+    .start-sm {
+        justify-content: flex-start;
+        text-align: start;
+    }
+
+    .center-sm {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .end-sm {
+        justify-content: flex-end;
+        text-align: end;
+    }
+
+    .around-sm {
+        justify-content: space-around;
+    }
+
+    .between-sm {
+        justify-content: space-between;
+    }
+
+}
+
+/* Column Medium - For screens with a minimum width of 992px */
+
+@media only screen and (min-width: 62em){
+    
+    div[class|="col-md-"] {
+        box-sizing: border-box;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+    } 
+    
+    .col-md {
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+        flex-basis: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+  }
+
+  .col-md-1 {
+    flex-basis: 8.333%;
+    max-width: 8.333%;
+  }
+
+  .col-md-2 {
+    flex-basis: 16.667%;
+    max-width: 16.667%;
+  }
+
+  .col-md-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .col-md-4 {
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+  }
+
+  .col-md-5 {
+    flex-basis: 41.667%;
+    max-width: 41.667%;
+  }
+
+  .col-md-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .col-md-7 {
+    flex-basis: 58.333%;
+    max-width: 58.333%;
+  }
+
+  .col-md-8 {
+    flex-basis: 66.667%;
+    max-width: 66.667%;
+  }
+
+  .col-md-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  .col-md-10 {
+    flex-basis: 83.333%;
+    max-width: 83.333%;
+  }
+
+  .col-md-11 {
+    flex-basis: 91.667%;
+    max-width: 91.667%;
+  }
+
+  .col-md-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+    
+    /* MD Offset */
+    
+    .col-md-offset-1 {
+    margin-left: 8.333%;
+  }
+
+  .col-md-offset-2 {
+    margin-left: 16.667%;
+  }
+
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-md-offset-4 {
+    margin-left: 33.333%;
+  }
+
+  .col-md-offset-5 {
+    margin-left: 41.667%;
+  }
+
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-md-offset-7 {
+    margin-left: 58.333%;
+  }
+
+  .col-md-offset-8 {
+    margin-left: 66.667%;
+  }
+
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-md-offset-10 {
+    margin-left: 83.333%;
+  }
+
+  .col-md-offset-11 {
+    margin-left: 91.667%;
+  }
+    
+    /* MD Position */
+    
+    .start-md {
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .center-md {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .end-md {
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  .around-md {
+    justify-content: space-around;
+  }
+
+  .between-md {
+    justify-content: space-between;
+  }
+
+}
+
+/* Column Large - For screens with a minimum width of 1200px */
+
+@media only screen and (min-width: 75em) {
+    
+    /* LG Columns */
+
+  div[class|="col-lg-"] {
+    box-sizing: border-box;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+
+  .col-lg {
+      -webkit-flex-grow: 1;
+      flex-grow: 1;
+      flex-basis: 0;
+      max-width: 100%;
+      box-sizing: border-box;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+  }
+
+  .col-lg-1 {
+    flex-basis: 8.333%;
+    max-width: 8.333%;
+  }
+
+  .col-lg-2 {
+    flex-basis: 16.667%;
+    max-width: 16.667%;
+  }
+
+  .col-lg-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .col-lg-4 {
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+  }
+
+  .col-lg-5 {
+    flex-basis: 41.667%;
+    max-width: 41.667%;
+  }
+
+  .col-lg-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .col-lg-7 {
+    flex-basis: 58.333%;
+    max-width: 58.333%;
+  }
+
+  .col-lg-8 {
+    flex-basis: 66.667%;
+    max-width: 66.667%;
+  }
+
+  .col-lg-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  .col-lg-10 {
+    flex-basis: 83.333%;
+    max-width: 83.333%;
+  }
+
+  .col-lg-11 {
+    flex-basis: 91.667%;
+    max-width: 91.667%;
+  }
+
+  .col-lg-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+    
+    /* LG Offset */
+
+  .col-lg-offset-1 {
+    margin-left: 8.333%;
+  }
+
+  .col-lg-offset-2 {
+    margin-left: 16.667%;
+  }
+
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-lg-offset-4 {
+    margin-left: 33.333%;
+  }
+
+  .col-lg-offset-5 {
+    margin-left: 41.667%;
+  }
+
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-lg-offset-7 {
+    margin-left: 58.333%;
+  }
+
+  .col-lg-offset-8 {
+    margin-left: 66.667%;
+  }
+
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-lg-offset-10 {
+    margin-left: 83.333%;
+  }
+
+  .col-lg-offset-11 {
+    margin-left: 91.667%;
+  }
+    
+    /* LG Position */
+
+  .start-lg {
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .center-lg {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .end-lg {
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  .around-lg {
+    justify-content: space-around;
+  }
+
+  .between-lg {
+    justify-content: space-between;
+  }
+
+}
