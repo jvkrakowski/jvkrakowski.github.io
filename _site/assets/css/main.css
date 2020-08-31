@@ -47,9 +47,7 @@ section { padding-top: 1rem; margin-bottom: 1rem; }
 /* Header */
 header { min-height: 100px; text-align: center; background: #ecf0f1; box-sizing: border-box; padding: 2rem; margin-left: -1rem; box-sizing: border-box; background: #bdc3c7; }
 
-h1.site-title { font-size: 10em; line-height: 1em; margin: 0; padding-bottom: 0; font-weight: 300; }
-
-p.last-name { font-size: 5.4em; line-height: 1em; margin: 0; padding-top: 0; font-weight: 300; }
+h1.site-title { font-size: 4.5em; line-height: 1em; margin: 0; padding-bottom: 0; font-weight: 300; }
 
 .wrapper header { margin-left: -2rem; margin-right: -1rem; }
 
@@ -69,9 +67,11 @@ span.credit { clear: both; display: block; text-align: right; font-size: 1rem; m
 
 p.first { font-size: 1.5em; line-height: 1em; padding: 0; margin: 0; font-weight: 300; }
 
-p.second { font-size: 1em; line-height: 1em; padding: 0; margin: 0; margin-bottom: 2em; }
+p.second { font-size: 1.6em; line-height: 1.5em; padding: 0; margin: 0; margin-bottom: 1.4em; }
 
-p.intro { font-size: 1.5em; line-height: 1em; padding: 0; margin: 0; }
+p.catch { font-style: italic; }
+
+p.last-name { font-size: 5.4em; line-height: 1em; margin: 0; padding-top: 0; font-weight: 300; }
 
 table { width: 100%; }
 
@@ -106,8 +106,6 @@ img[align="left"] { margin-right: .7rem; }
 img[align="right"] { margin-left: .5rem; /* for firefox */ }
 
 img { width: 100%; height: auto; padding: 0; margin: 0; }
-
-img.main { width: 50%; height: auto; padding: 0; margin: 0; margin-right: 15px; margin-bottom: 10px; }
 
 /* Links */
 a { text-decoration: none; font-weight: bold; }
