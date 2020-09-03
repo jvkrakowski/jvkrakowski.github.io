@@ -1,0 +1,19 @@
+---
+layout: default
+title: Blog
+---
+
+<section>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="box">
+                {% for post in site.posts %}
+                <time>{{ post.date | date: "%b %-d, %Y" }}</time>
+                <h2 class="blog-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+                <p class="excerpt">{{ post.excerpt }}</p>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</section>

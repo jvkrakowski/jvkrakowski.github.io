@@ -128,7 +128,7 @@ footer p.footer-message {
 /* Typography */
 
 h1, h2, h3, h4 {
-    font-weight: 400;
+    margin-top: 35px;
 }
 
 blockquote {
@@ -204,6 +204,31 @@ td {
     padding-top: 5px;
     padding-left: 0;
     padding-bottom: 0;
+}
+
+h2.blog-title {
+    font-size: 2.2em;
+    padding: 0; 
+    margin: 5px 0 5px 0;
+    color: black;
+}
+
+h2.blog-title a {
+    color: black;
+}
+
+h1.blog-title {
+    word-wrap: break-word;
+    font-size: 2.4em;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    padding-bottom: 35px;
+}
+
+
+p.excerpt {
+    margin: 0;
+    padding: 0;
 }
 
 /* Paragraph */ 

@@ -55,7 +55,7 @@ h1.site-title { font-size: 4.5em; line-height: 1em; margin: 0; padding-bottom: 0
 footer p.footer-message { text-align: center; font-size: .7em; padding-top: .5em; padding-bottom: .5em; }
 
 /* Typography */
-h1, h2, h3, h4 { font-weight: 400; }
+h1, h2, h3, h4 { margin-top: 35px; }
 
 blockquote { border-left: 2px solid grey; padding-left: 1rem; font-size: 1.5rem; height: auto; }
 
@@ -78,6 +78,14 @@ table { width: 100%; }
 th { text-align: left; font-weight: 300; font-size: 1.2em; margin-bottom: 10px; }
 
 td { padding: 15px; padding-top: 5px; padding-left: 0; padding-bottom: 0; }
+
+h2.blog-title { font-size: 2.2em; padding: 0; margin: 5px 0 5px 0; color: black; }
+
+h2.blog-title a { color: black; }
+
+h1.blog-title { word-wrap: break-word; font-size: 2.4em; font-weight: bold; border-bottom: 2px solid #000; padding-bottom: 35px; }
+
+p.excerpt { margin: 0; padding: 0; }
 
 /* Paragraph */
 p.first-paragraph { font-size: 1.5rem; margin-bottom: 0; }

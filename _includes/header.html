@@ -1,9 +1,7 @@
 <div class="space"></div>
     <div class="wrapper">
         <nav>
-            {% for page in site.pages | sort: 'order' %} 
-            {% if page.title %}
-            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-            {% endif %} {% endfor %}
-				<a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a>
+            <a href="{{ site.baseurl }}/index.html">Home</a>
+            <a href="{{ site.baseurl }}/resume.html">Resume</a>
+            <a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a>
         </nav>
