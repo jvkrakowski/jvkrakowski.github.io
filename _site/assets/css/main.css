@@ -36,8 +36,9 @@ section { padding-top: 1rem; margin-bottom: 1rem; }
 
 .container section { margin: .6rem; }
 
-.wrapper { width: 65%; max-width: 960px; margin-left: auto; margin-right: auto; padding-right: 1rem; padding-left: 2rem; background: #ffffff; border: solid 4px #000; }
+.wrapper { width: 65%; max-width: 960px; margin-left: auto; margin-right: auto; padding-right: 1rem; padding-left: 2rem; background: #ffffff; border: solid 4px #212121; }
 
+/* Divides */
 .space { height: 120px; width: 90%; clear: both; }
 
 .divide { height: 30px; width: 90%; clear: both; }
@@ -45,7 +46,7 @@ section { padding-top: 1rem; margin-bottom: 1rem; }
 .sml-divide { height: 10px; width: 90%; clear: both; }
 
 /* Header */
-header { min-height: 100px; text-align: center; background: #ecf0f1; box-sizing: border-box; padding: 2rem; margin-left: -1rem; box-sizing: border-box; background: #bdc3c7; }
+header { min-height: 100px; text-align: center; background: #ffffff; box-sizing: border-box; padding: 2rem; margin-left: -1rem; box-sizing: border-box; }
 
 h1.site-title { font-size: 4.5em; line-height: 1em; margin: 0; padding-bottom: 0; font-weight: 300; }
 
@@ -57,7 +58,7 @@ footer p.footer-message { text-align: center; font-size: .7em; padding-top: .5em
 /* Typography */
 h1, h2, h3, h4 { margin-top: 35px; }
 
-blockquote { border-left: 2px solid grey; padding-left: 1rem; font-size: 1.5rem; height: auto; }
+blockquote { border-left: 2px solid #212121; padding-left: 1rem; font-size: 1.5rem; height: auto; }
 
 span.credit { clear: both; display: block; text-align: right; font-size: 1rem; margin-left: auto; margin-right: auto; }
 
@@ -79,11 +80,11 @@ th { text-align: left; font-weight: 300; font-size: 1.2em; margin-bottom: 10px; 
 
 td { padding: 15px; padding-top: 5px; padding-left: 0; padding-bottom: 0; }
 
-h2.blog-title { font-size: 2.2em; padding: 0; margin: 5px 0 5px 0; color: black; }
+h2.blog-title { font-size: 2.2em; padding: 0; margin: 5px 0 5px 0; color: #212121; }
 
-h2.blog-title a { color: black; }
+h2.blog-title a { color: #212121; }
 
-h1.blog-title { word-wrap: break-word; font-size: 2.4em; font-weight: bold; border-bottom: 2px solid #000; padding-bottom: 35px; }
+h1.blog-title { word-wrap: break-word; font-size: 3em; font-weight: bold; border-bottom: 2px solid #212121; padding-bottom: 35px; }
 
 p.excerpt { margin: 0; padding: 0; }
 
@@ -125,7 +126,7 @@ a:active { opacity: .5; }
 /* Navigation */
 nav { background: #000000; margin-left: -2rem; margin-right: -1rem; margin-top: 0; padding-top: 5px; padding-bottom: 5px; height: auto; text-align: center; }
 
-nav a { margin: 0; margin-right: .5rem; padding: 0; font-weight: normal; color: #fff; }
+nav a { margin: 0; margin-right: .5rem; padding: 0; font-weight: normal; color: #ffffff; }
 
 .container nav { margin: 0; margin-left: -1rem; }
 

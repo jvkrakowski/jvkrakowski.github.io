@@ -25,6 +25,10 @@
 * Column Large - For screens with a minimum width of 1200px
 */
 
+$dark: #212121;
+$light: #ffffff;
+
+
 /* Basics */
 
 html {
@@ -65,9 +69,12 @@ section {
     margin-right: auto;
     padding-right: 1rem;
     padding-left: 2rem;
-    background: #ffffff;
-    border: solid 4px #000;
+    background: $light;
+    border: solid 4px $dark;
 }
+
+
+/* Divides */
 
 .space {
     height: 120px;
@@ -92,12 +99,12 @@ section {
 header {
     min-height: 100px;
     text-align: center;
-    background: #ecf0f1;
+    background: $light;
     box-sizing: border-box;
     padding: 2rem;
     margin-left: -1rem;
     box-sizing: border-box;
-    background: #bdc3c7;
+//    background: #bdc3c7;
 }
 
 h1.site-title {
@@ -132,7 +139,7 @@ h1, h2, h3, h4 {
 }
 
 blockquote {
-    border-left: 2px solid grey;
+    border-left: 2px solid $dark;
     padding-left: 1rem;
     font-size: 1.5rem;
     height: auto;
@@ -156,7 +163,7 @@ span.credit {
     width: 100%;
     padding-bottom: 5px;
     padding-top: 5px;
-    border-bottom: 2px solid #212121;
+    border-bottom: 2px solid $dark;
     text-transform: uppercase;
 }
 
@@ -210,18 +217,18 @@ h2.blog-title {
     font-size: 2.2em;
     padding: 0; 
     margin: 5px 0 5px 0;
-    color: black;
+    color: $dark;
 }
 
 h2.blog-title a {
-    color: black;
+    color: $dark;
 }
 
 h1.blog-title {
     word-wrap: break-word;
-    font-size: 2.4em;
+    font-size: 3em;
     font-weight: bold;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid $dark;
     padding-bottom: 35px;
 }
 
@@ -351,7 +358,7 @@ nav a {
     margin-right: .5rem;
     padding: 0; 
     font-weight: normal;
-    color: #fff;
+    color: $light;
 }
 
 .container nav {
