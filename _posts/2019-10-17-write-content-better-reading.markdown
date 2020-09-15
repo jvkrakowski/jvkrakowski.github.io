@@ -3,7 +3,8 @@ layout: post
 title: "How to Write Content for Better Reading"
 description: "Learn to keep your visitor's attention with content that's easy to read and concise. Don't publish content without this guide to help you keep it organized!"
 date: 2019-10-17 
-featured_image: "https://i.ibb.co/gWg2V51/beverage-books-caffeine-904616.jpg"
+featured_image: "https://i.ibb.co/rxjYSHY/how-write-content-better-reading.png"
+author: "J.V Krakowski"
 tag: [reading, content]
 excerpt_separator: <!--more-->
 categories: [Content]

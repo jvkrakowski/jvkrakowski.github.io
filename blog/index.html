@@ -1,15 +1,16 @@
 ---
-layout: default
+layout: blog
 title: Blog
 ---
 
 <section>
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="box">
+            <div class="box animate__bounceIn">
                 {% for post in site.posts %}
-                <time>{{ post.date | date: "%b %-d, %Y" }}</time>
+                <time>{{ post.date | date: "%b %-d, %Y" }}</time> by {{post.author}}
                 <h2 class="blog-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+<!--                <img src="{{ post.featured_image }}">-->
                 <p class="excerpt">{{ post.excerpt }}</p>
                 {% endfor %}
 
