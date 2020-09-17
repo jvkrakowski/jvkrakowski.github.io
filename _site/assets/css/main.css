@@ -16,6 +16,7 @@
 ** Dictionary 
 ** Table
 ** Typography Alignment
+* Blog
 * Images
 * Progress
 * Links
@@ -126,6 +127,11 @@ td { padding: 15px; padding-top: 5px; padding-left: 0; padding-bottom: 0; }
 
 /* Typography Alignments */
 .center { text-align: center; }
+
+/* Blog */
+.post h2 { font-weight: bold; }
+
+.post h3 { font-style: italic; }
 
 /* Images */
 img[align="left"] { margin-right: .7rem; }

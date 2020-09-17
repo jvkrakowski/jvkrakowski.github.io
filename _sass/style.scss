@@ -16,6 +16,7 @@
 ** Dictionary 
 ** Table
 ** Typography Alignment
+* Blog
 * Images
 * Progress
 * Links
@@ -315,6 +316,16 @@ td {
 
 .center {
     text-align: center;
+}
+
+/* Blog */ 
+
+.post h2 {
+    font-weight: bold;
+}
+
+.post h3 {
+    font-style: italic;
 }
 
 /* Images */ 
