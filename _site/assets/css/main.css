@@ -44,7 +44,7 @@ section { padding-top: 1rem; margin-bottom: 1rem; }
 
 .container section { margin: .6rem; }
 
-.wrapper { width: 65%; max-width: 900px; margin-left: auto; margin-right: auto; padding-right: 1rem; padding-left: 2rem; background: #ffffff; border: solid 4px #000000; }
+.wrapper { width: 65%; max-width: 960px; margin-left: auto; margin-right: auto; padding-right: 1rem; padding-left: 2rem; background: #ffffff; border: solid 4px #000000; }
 
 .box { padding: 25px; }
 
@@ -62,13 +62,13 @@ hr.border { border: 2px solid #000000; margin-top: 15px; margin-bottom: 15px; }
 /* Header */
 header { min-height: 100px; box-sizing: border-box; padding: 2rem; margin-left: -1rem; box-sizing: border-box; background: #000000; color: #ffffff; }
 
-h1.site-title { font-size: 4.5em; line-height: 1em; margin: 0; padding-bottom: 0; font-weight: 300; }
+h1.site-title { font-size: 1.5em; line-height: 1em; margin: 0; padding-bottom: 0; font-weight: 300; }
 
 .wrapper header { margin-left: -2rem; margin-right: -1rem; }
 
-ul.icons { padding: 0; margin: 0; }
+ul.icons { padding: 0; margin: 0; text-align: right; }
 
-ul.icons li { display: inline; font-size: 1.5em; list-style: none; margin-right: 10px; }
+ul.icons li { display: inline; font-size: 1em; list-style: none; margin-right: 10px; }
 
 /* Footer */
 footer p.footer-message { text-align: center; font-size: .7em; padding-top: .5em; padding-bottom: .5em; }
@@ -88,7 +88,7 @@ h2.blog-title { font-size: 2.2em; padding: 0; margin: 5px 0 5px 0; color: #00000
 
 h2.blog-title a { color: #000000; }
 
-h1.blog-title { word-wrap: break-word; font-size: 3em; line-height: 1em; font-weight: bold; }
+h1.blog-title { word-wrap: break-word; font-size: 3em; line-height: 1em; font-weight: bold; margin: 0; padding: 0; }
 
 /* Paragraph */
 p.first-paragraph { font-size: 1.5rem; margin-bottom: 0; }

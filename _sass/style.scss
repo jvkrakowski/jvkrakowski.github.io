@@ -75,7 +75,7 @@ section {
 
 .wrapper {
     width: 65%;
-    max-width: 900px;
+    max-width: 960px;
     margin-left: auto;
     margin-right: auto;
     padding-right: 1rem;
@@ -136,7 +136,7 @@ header {
 }
 
 h1.site-title {
-    font-size: 4.5em;
+    font-size: 1.5em;
     line-height: 1em;
     margin: 0;
     padding-bottom: 0;
@@ -152,11 +152,12 @@ h1.site-title {
 ul.icons {
     padding: 0;
     margin: 0;
+    text-align: right;
 }
 
 ul.icons li {
     display: inline;
-    font-size: 1.5em;
+    font-size: 1em;
     list-style: none;
     margin-right: 10px;
 }
@@ -213,6 +214,8 @@ h1.blog-title {
     font-size: 3em;
     line-height: 1em;
     font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 
 /* Paragraph */ 
