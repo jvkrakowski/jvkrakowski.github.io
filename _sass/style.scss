@@ -51,8 +51,11 @@ body {
     font-size: 1em;
     font-family: aileron, sans-serif;
     font-weight: normal;
-    background: #ffffff url('/assets/img/panda.jpg') repeat center center;
-    background-size: cover;
+    // background: #ffffff url('/assets/img/papyrus-dark.png') repeat center center;
+    // background-size: auto;
+    // background: #fe53bb;
+    background: #ffffff;
+    height: 100%;
     
 }
 
@@ -75,17 +78,19 @@ section {
 
 .wrapper {
     width: 65%;
-    max-width: 960px;
+    max-width: 760px;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-right: 1rem;
     padding-left: 2rem;
     background: $light;
-    border: solid 4px $dark;
+    // border: solid 4px $dark;
 }
 
 .box {
     padding: 25px;
+    margin-bottom: 15px;
 }
 
 .special {
@@ -93,6 +98,10 @@ section {
     padding-bottom: 0;
     margin-top: 0; 
     margin-bottom: 0;
+}
+
+.special img {
+  max-width: 860px;
 }
 
 
@@ -131,16 +140,18 @@ header {
     padding: 2rem;
     margin-left: -1rem;
     box-sizing: border-box;
-    background: $dark;
-    color: $light;
+    background: $light;
+    color: $dark;
+    text-align: center;
 }
 
 h1.site-title {
-    font-size: 1.5em;
+    font-size: 2.5em;
     line-height: 1em;
     margin: 0;
     padding-bottom: 0;
     font-weight: 300;
+    padding: 0
 }
 
 
@@ -152,7 +163,7 @@ h1.site-title {
 ul.icons {
     padding: 0;
     margin: 0;
-    text-align: right;
+    font-weight: 100;
 }
 
 ul.icons li {
@@ -189,6 +200,10 @@ h2 {
 
 h3 {
     font-size: 1.2em;
+}
+
+i {
+  font-weight: normal;
 }
 
 blockquote {
@@ -346,6 +361,7 @@ img {
     height: auto;
     padding: 0;
     margin: 0;
+    display: block;
 }
 
 /* Progress */
@@ -372,7 +388,7 @@ img {
 }
 
 .complete {
-    width: 100%;
+    // width: 100%;
 }
 
 .nearly {
@@ -399,8 +415,8 @@ img {
 
 a {
     text-decoration: none;
-    font-weight: bold;
-    color: #E86A92;
+    font-weight: 400;
+    color: #FE53BB;
 }
 
 a:hover {
@@ -414,7 +430,15 @@ a:active {
 }
 
 a:visited {
-    color: #41E2BA;
+    color: #09FBD3;
+}
+
+.blog-btn {
+  background:#D4ED8C; 
+  padding: 10px;
+  border: none;
+  color: #000;
+  border-radius: 5px;
 }
 
 /* Grow */

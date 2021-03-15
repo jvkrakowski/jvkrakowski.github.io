@@ -14,6 +14,8 @@ Last night, I saw a photo on Facebook with a quote, "I know everything happens f
 
 According to the American Heart Association, alcohol sales were up 54%. I know quite a few people that helped keep that number up. As trapped extroverts, I understood that prolonged time alone was taxing for them. Personally speaking, I found it refreshing. 
 
+<!--more-->
+
 There were things that I missed, even as introverted as I am. I wanted to eat at a restaurant and go to a movie. I wanted to socialize my baby (who had been born the previous year). I wanted to stop wearing a mask. 
 
 I have thalassemia, and I was on the high risk list. That didn't leave me with much to do, honestly. I went back to college, but I couldn't tell you when I started that. I struggled with my own mental health (non-quarantine related) and a host of other problems. 

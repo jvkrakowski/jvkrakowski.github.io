@@ -35,7 +35,7 @@
 /* Basics */
 html { box-sizing: border-box; }
 
-body { font-size: 18px; font-size: 1em; font-family: aileron, sans-serif; font-weight: normal; background: #ffffff url("/assets/img/panda.jpg") repeat center center; background-size: cover; }
+body { font-size: 18px; font-size: 1em; font-family: aileron, sans-serif; font-weight: normal; background: #ffffff; height: 100%; }
 
 /* Container, Section and Wrapper */
 .container { margin-left: auto; margin-right: auto; padding-left: 1rem; }
@@ -44,11 +44,13 @@ section { padding-top: 1rem; margin-bottom: 1rem; }
 
 .container section { margin: .6rem; }
 
-.wrapper { width: 65%; max-width: 960px; margin-left: auto; margin-right: auto; padding-right: 1rem; padding-left: 2rem; background: #ffffff; border: solid 4px #000000; }
+.wrapper { width: 65%; max-width: 760px; height: 100%; margin-left: auto; margin-right: auto; padding-right: 1rem; padding-left: 2rem; background: #ffffff; }
 
-.box { padding: 25px; }
+.box { padding: 25px; margin-bottom: 15px; }
 
 .special { padding-top: 0; padding-bottom: 0; margin-top: 0; margin-bottom: 0; }
+
+.special img { max-width: 860px; }
 
 /* Divides */
 .space { height: 120px; width: 90%; clear: both; }
@@ -60,13 +62,13 @@ section { padding-top: 1rem; margin-bottom: 1rem; }
 hr.border { border: 2px solid #000000; margin-top: 15px; margin-bottom: 15px; }
 
 /* Header */
-header { min-height: 100px; box-sizing: border-box; padding: 2rem; margin-left: -1rem; box-sizing: border-box; background: #000000; color: #ffffff; }
+header { min-height: 100px; box-sizing: border-box; padding: 2rem; margin-left: -1rem; box-sizing: border-box; background: #ffffff; color: #000000; text-align: center; }
 
-h1.site-title { font-size: 1.5em; line-height: 1em; margin: 0; padding-bottom: 0; font-weight: 300; }
+h1.site-title { font-size: 2.5em; line-height: 1em; margin: 0; padding-bottom: 0; font-weight: 300; padding: 0; }
 
 .wrapper header { margin-left: -2rem; margin-right: -1rem; }
 
-ul.icons { padding: 0; margin: 0; text-align: right; }
+ul.icons { padding: 0; margin: 0; font-weight: 100; }
 
 ul.icons li { display: inline; font-size: 1em; list-style: none; margin-right: 10px; }
 
@@ -81,6 +83,8 @@ h1 { font-size: 2em; }
 h2 { font-size: 1.8em; }
 
 h3 { font-size: 1.2em; }
+
+i { font-weight: normal; }
 
 blockquote { border-left: 2px solid #000000; padding-left: 1rem; font-size: 1.5rem; height: auto; }
 
@@ -138,7 +142,7 @@ img[align="left"] { margin-right: .7rem; }
 
 img[align="right"] { margin-left: .5rem; /* for firefox */ }
 
-img { width: 100%; height: auto; padding: 0; margin: 0; }
+img { width: 100%; height: auto; padding: 0; margin: 0; display: block; }
 
 /* Progress */
 .progress { min-height: 15px; width: 100%; background: #000000; clear: both; margin-bottom: 15px; }
@@ -146,8 +150,6 @@ img { width: 100%; height: auto; padding: 0; margin: 0; }
 .progress-bar { min-height: 15px; background: #41E2BA; color: #fff; padding: 5px; }
 
 .progress-bar span { vertical-align: middle; padding: 0; margin: 0; }
-
-.complete { width: 100%; }
 
 .nearly { width: 95%; }
 
@@ -160,13 +162,15 @@ img { width: 100%; height: auto; padding: 0; margin: 0; }
 .dipped { width: 10%; }
 
 /* Links */
-a { text-decoration: none; font-weight: bold; color: #E86A92; }
+a { text-decoration: none; font-weight: 400; color: #FE53BB; }
 
 a:hover { font-style: italic; font-weight: bold; opacity: .5; }
 
 a:active { opacity: .5; }
 
-a:visited { color: #41E2BA; }
+a:visited { color: #09FBD3; }
+
+.blog-btn { background: #D4ED8C; padding: 10px; border: none; color: #000; border-radius: 5px; }
 
 /* Grow */
 .hvr-grow { display: inline-block; vertical-align: middle; -webkit-transform: perspective(1px) translateZ(0); transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px rgba(0, 0, 0, 0); -webkit-transition-duration: 0.3s; transition-duration: 0.3s; -webkit-transition-property: transform; transition-property: transform; }
