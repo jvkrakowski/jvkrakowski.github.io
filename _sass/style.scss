@@ -49,7 +49,7 @@ html {
 body {
     font-size: 18px;
     font-size: 1em;
-    font-family: aileron, sans-serif;
+    font-family: aileron, serif;
     font-weight: normal;
     // background: #ffffff url('/assets/img/papyrus-dark.png') repeat center center;
     // background-size: auto;
@@ -240,14 +240,6 @@ p.first-paragraph {
     margin-bottom: 0;
 }
 
-.first-letter {
-    float: left;
-  font-size: 5rem;
-  line-height: 60px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
-}
 
 p.excerpt {
     margin: 0;
@@ -260,6 +252,21 @@ p.last-name {
     margin: 0;
     padding-top: 0;
     font-weight: 300;
+}
+
+// .post p:first-child:first-letter {
+//   float: left;
+//   font-size: 5rem;
+//   line-height: 60px;
+//   padding-top: 4px;
+//   padding-right: 8px;
+//   padding-left: 3px;
+// }
+
+.post p:first-child:first-line {
+  text-transform: capitalize;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 /* Lists */ 
@@ -433,12 +440,13 @@ a:visited {
     color: #09FBD3;
 }
 
-.blog-btn {
+a.blog-btn {
   background:#D4ED8C; 
   padding: 10px;
   border: none;
   color: #000;
   border-radius: 5px;
+  color: #000;
 }
 
 /* Grow */

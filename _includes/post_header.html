@@ -5,7 +5,8 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <a href="{{ site.baseurl }}/blog"><h1 class="blog-title">{{ page.title }}</h1></a>
-                        <time>{{ page.date | date: "%b %-d, %Y" }}</time>
+                    <div class="divide"></div>
+                        <time>{{ page.date | date: "%b %-d, %Y" }}</time> by {{page.author}}
 <!--
                         <ul class="icons animate__bounceIn">
                             <li><a href="{{ site.baseurl }}/index.html"><i class="icofont-home"></i></a></li>
