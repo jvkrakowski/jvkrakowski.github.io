@@ -40,6 +40,7 @@ $light: #F0F0F2;
 }
 
 
+
 /* Basics */
 
 html {
@@ -138,7 +139,7 @@ header {
     box-sizing: border-box;
     background: $light;
     color: $dark;
-    max-height: 80px;
+    max-height: 110px;
 }
 
 h1.site-title {
@@ -290,11 +291,12 @@ ul.checked li {
 /* Pre and Code */
 
 code {
-    background: #eee;
+    background: #E8E8E8;
     max-width: 60%; 
     display: block;
     margin: 0 auto;
     padding: 1rem;
+    white-space: pre-wrap;
 }
 
 /* Dictionary */ 
@@ -423,7 +425,6 @@ a {
 }
 
 a:hover {
-    font-style: italic;
     font-weight: bold;
     opacity: .5;
 }
@@ -441,6 +442,11 @@ a.blog-btn {
   padding: 10px;
   border: none;
   color: #F2C641;
+}
+
+
+a:hover .blog-title {
+    opacity: .5;
 }
 
 /* Grow */

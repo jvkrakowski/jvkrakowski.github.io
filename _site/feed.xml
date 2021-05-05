@@ -1,4 +1,188 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-05-01T21:46:55-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">JVKrakowski</title><subtitle>Online resume of JV Krakowski</subtitle><entry><title type="html">Writing Content for Better Reading [UPDATED]</title><link href="http://localhost:4000/content/2021/03/21/write-content-better-reading.html" rel="alternate" type="text/html" title="Writing Content for Better Reading [UPDATED]" /><published>2021-03-21T00:00:00-04:00</published><updated>2021-03-21T00:00:00-04:00</updated><id>http://localhost:4000/content/2021/03/21/write-content-better-reading</id><content type="html" xml:base="http://localhost:4000/content/2021/03/21/write-content-better-reading.html">&lt;p&gt;It takes four seconds for people to decide whether the content is worth reading. Everything from font and format to site design and layout will affect their decision. However, nothing makes readers click away faster than ill-written content.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-05-04T22:19:26-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">JVKrakowski</title><subtitle>Online resume of JV Krakowski</subtitle><entry><title type="html">Building an FAQ Accordion with JQuery</title><link href="http://localhost:4000/coding/2021/05/04/build-accordion-faq.html" rel="alternate" type="text/html" title="Building an FAQ Accordion with JQuery" /><published>2021-05-04T00:00:00-04:00</published><updated>2021-05-04T00:00:00-04:00</updated><id>http://localhost:4000/coding/2021/05/04/build-accordion-faq</id><content type="html" xml:base="http://localhost:4000/coding/2021/05/04/build-accordion-faq.html">&lt;p&gt;Long, drawn-out content is a pet peeve of mine. After a decade of evaluating websites, does anyone blame me? When you imagine creating websites, endless scrolling isn’t something you think will be a problem. I learned to appreciate those “back to top” buttons if nothing else.&lt;/p&gt;
+
+&lt;p&gt;I acknowledge on a minor level that long content is sometimes unavoidable. Most help sections are among those exceptions. In those cases, there’s such a thing as an accordion effect to help condense content into a consumable format. Today, we’re going to learn how to build a simple one with jQuery.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;The tools you’ll be needing are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;jQuery 3.5.1&lt;/li&gt;
+  &lt;li&gt;Code Editor&lt;/li&gt;
+  &lt;li&gt;Dummy content&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To set up your work environment, we’re going to create a folder on your desktop. You can name it anything you want, but it would be best to keep it simple. It would be a blank folder on your desktop.&lt;/p&gt;
+
+&lt;p&gt;I like to open the folder and then minimize it on my taskbar. It’s a personal preference, so you can do whatever you want at this point. Right now, we’re going to open our code editor to create the HTML that will display the jQuery code we make.&lt;/p&gt;
+
+&lt;p&gt;I use several different editors, and it doesn’t matter what you choose. Since this isn’t a tutorial on how to code HTML, I’ll slap the code right here:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot;&amp;gt;
+    &amp;lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;normalize.css&quot;&amp;gt;
+    &amp;lt;script src=&quot;https://code.jquery.com/jquery-3.5.1.min.js&quot; integrity=&quot;sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=&quot; crossorigin=&quot;anonymous&quot;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;script src=&quot;ask.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;meta charset=&quot;UTF-8&quot;&amp;gt;
+    &amp;lt;meta name=&quot;description&quot; content=&quot;Free Web tutorials&quot;&amp;gt;
+    &amp;lt;meta name=&quot;keywords&quot; content=&quot;HTML,CSS,XML,JavaScript&quot;&amp;gt;
+    &amp;lt;meta name=&quot;author&quot; content=&quot;John Doe&quot;&amp;gt;
+    &amp;lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&amp;gt;
+    &amp;lt;title&amp;gt;Ask | Built with JQuery&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;div class=&quot;wrapper&quot;&amp;gt;
+        &amp;lt;h1&amp;gt;Ask &amp;amp;mdash; Demo&amp;lt;/h1&amp;gt;
+        &amp;lt;p&amp;gt;A basic, no frills FAQ built with jquery.&amp;lt;/p&amp;gt;
+        &amp;lt;input class=&quot;open&quot; type=&quot;button&quot; value=&quot;Open All&quot;&amp;gt;
+        &amp;lt;dl class=&quot;questions&quot;&amp;gt;
+            &amp;lt;dt&amp;gt;Question 1&amp;lt;/dt&amp;gt;
+            &amp;lt;dd&amp;gt;Answer&amp;lt;/dd&amp;gt;
+            &amp;lt;dt&amp;gt;Question 2&amp;lt;/dt&amp;gt;
+            &amp;lt;dd&amp;gt;Answer.&amp;lt;/dd&amp;gt;
+        &amp;lt;/dl&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you look at the head section, you’ll notice several essential bits of code. The &lt;link /&gt; code tells the browser where to find the stylesheets. The &lt;script&gt; code tells the browser where to find the jquery. There are two sets of &lt;script&gt; code; one for the main jQuery and another for our bit of code.&lt;/script&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Everything between the wrapper class will be affected by our jQuery code. For this tutorial, you can copy and paste it into your index file. Speaking of which, you need to create an index file and save it to your folder.&lt;/p&gt;
+
+&lt;p&gt;It should look like this:&lt;/p&gt;
+
+&lt;p&gt;[img]&lt;/p&gt;
+
+&lt;p&gt;Now, we’re going to concentrate on creating the script that will make this accordion work. Here is the full code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-jquery&quot;&gt;$(function () {
+  var Speed = 800;
+  $('.questions dd').hide();
+  $('.questions dt').click(function () {
+    $(this).next(&quot;.questions dd&quot;).slideToggle(Speed);
+    $(this).toggleClass(&quot;expanded_img&quot;);
+  });
+    $('.open').click(function (){
+        $('.questions dd').slideToggle('.questions dt');
+        $('.questions dt').toggleClass(&quot;expanded_img&quot;);
+        $('.open').val('Open All');
+        $('.open').toggleClass('close');
+        $('.close').val('Close All').removeClass('.close');
+    });
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The above code is simple, and I purposefully made it that way. if you look at the first line of code, you’re going to see this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-jquery&quot;&gt;$(function() { ... });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That code is the short-hand for the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-jquery&quot;&gt;$(document).ready(function() { ... });
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Both of them ensure that the script is loaded once the DOM elements are ready to be used. The phrase “DOM elements” refers to the HTML on a web page. We need it to operate that way because the script won’t work correctly if the DOM elements aren’t loaded properly.&lt;/p&gt;
+
+&lt;p&gt;The next bit of code looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-jquery&quot;&gt;var Speed = 800; 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In that line, I’m declaring a variable called “Speed.” It will tell the script how quickly the accordion should open and close. Speaking of which, here is the next bit of code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-jquery&quot;&gt;$('.questions dd').hide();
+  $('.questions dt').click(function () {
+    $(this).next(&quot;.questions dd&quot;).slideToggle(Speed);
+    $(this).toggleClass(&quot;expanded_img&quot;);
+  });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We’re telling the script to find the class “questions” and hide the answer portion of it. The following code makes the question a clickable link so that it will reveal the answer below it. The last bit of code appends the class “expanded_img” to the DIV.&lt;/p&gt;
+
+&lt;p&gt;The class appended to the DIV is controlled by our stylesheet. It calls the icons that indicate the closed or open status of an accordion item.&lt;/p&gt;
+
+&lt;p&gt;The next portion of our code looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-jquery&quot;&gt;$('.open').click(function (){
+        $('.questions dd').slideToggle('.questions dt');
+        $('.questions dt').toggleClass(&quot;expanded_img&quot;);
+        $('.open').val('Open All');
+        $('.open').toggleClass('close');
+        $('.close').val('Close All').removeClass('.close');
+    });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When I was coding the accordion, I wanted an open and close icon next to the questions. The above code makes that happen repeatedly. The code that calls the “open” class is referring to the “Open All” button.&lt;/p&gt;
+
+&lt;p&gt;The button will say “Open All” if the accordion is closed. Once you click the button, the text becomes “Close All.” The code doesn’t interfere with the click function of the question itself.&lt;/p&gt;
+
+&lt;p&gt;The code [val] refers to the text of the button itself. Changing the value of that code will change the text that appears on the button.&lt;/p&gt;
+
+&lt;p&gt;Now, all of this is going to look strange until we add code to our stylesheet. If you refer back a few paragraphs, you’ll notice that I linked to a stylesheet called “normalize.” That is the work of a person named Nicolas Gallagher. You can check out his Github here.&lt;/p&gt;
+
+&lt;p&gt;It isn’t necessary to add the normalize stylesheet. The only thing it does is unify how different browsers display the code. I like adding it to all my projects as a good habit.&lt;/p&gt;
+
+&lt;p&gt;The stylesheet that I coded looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;16px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Helvetica&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Arial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#ecf0f1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.wrapper&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;75%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1140px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;margin-left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;auto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;margin-right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;auto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;/* Quetions */&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;dl&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.questions&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#DCE3E5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;dl&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.questions&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;dt&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#E8ECEE&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url('plus.svg')&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;right&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;no-repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;background-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;22px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;background-origin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;content-box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;pointer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;border-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#DCE3E5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;dl&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.questions&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;dd&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#DCE3E5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;dl&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.questions&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.expanded_img&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#E8ECEE&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url('minus.svg')&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;right&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;no-repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background-origin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;content-box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;pointer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The stylesheet adds aesthetics to the web page. It’s essentially personal preference, and it has little to do with jQuery itself. Altering the code here changes the way it appears on the web page.&lt;/p&gt;
+
+&lt;p&gt;The classes with icon backgrounds are essential. That is how jQuery changes the icon from one to another.  However, it can be tweaked to fit your project.&lt;/p&gt;
+
+&lt;p&gt;I encourage you to experiment with the code. Playing around with someone else’s code is how many developers learned how to do it themselves. When you handle the code, you’re learning what each section does. You can download this code on &lt;a href=&quot;https://github.com/jvkrakowski/Ask&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Or, you can see a demo of it &lt;a href=&quot;http://jvkrakowski.com/Ask/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>J.V Krakowski</name></author><category term="jquery" /><category term="html" /><category term="css" /><category term="coding" /><category term="accordion" /><summary type="html">Long, drawn-out content is a pet peeve of mine. After a decade of evaluating websites, does anyone blame me? When you imagine creating websites, endless scrolling isn’t something you think will be a problem. I learned to appreciate those “back to top” buttons if nothing else. I acknowledge on a minor level that long content is sometimes unavoidable. Most help sections are among those exceptions. In those cases, there’s such a thing as an accordion effect to help condense content into a consumable format. Today, we’re going to learn how to build a simple one with jQuery.</summary></entry><entry><title type="html">Writing Content for Better Reading [UPDATED]</title><link href="http://localhost:4000/content/2021/03/21/write-content-better-reading.html" rel="alternate" type="text/html" title="Writing Content for Better Reading [UPDATED]" /><published>2021-03-21T00:00:00-04:00</published><updated>2021-03-21T00:00:00-04:00</updated><id>http://localhost:4000/content/2021/03/21/write-content-better-reading</id><content type="html" xml:base="http://localhost:4000/content/2021/03/21/write-content-better-reading.html">&lt;p&gt;It takes four seconds for people to decide whether the content is worth reading. Everything from font and format to site design and layout will affect their decision. However, nothing makes readers click away faster than ill-written content.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -80,35 +264,7 @@
 
 &lt;p&gt;Everyone has a formula for content writing that works for their readers. What works for one content writer may not work for another. Doing a bit of research about readers will help form one.&lt;/p&gt;
 
-&lt;p&gt;Originally published at &lt;a href=&quot;https://www.linkedin.com/pulse/how-write-content-better-reading-judia-krakowski/&quot;&gt;linkedin&lt;/a&gt;.&lt;/p&gt;</content><author><name>J.V Krakowski</name></author><category term="reading" /><category term="content" /><summary type="html">It takes four seconds for people to decide whether the content is worth reading. Everything from font and format to site design and layout will affect their decision. However, nothing makes readers click away faster than ill-written content.</summary></entry><entry><title type="html">Looking Back</title><link href="http://localhost:4000/general/2021/01/22/looking-back.html" rel="alternate" type="text/html" title="Looking Back" /><published>2021-01-22T00:00:00-05:00</published><updated>2021-01-22T00:00:00-05:00</updated><id>http://localhost:4000/general/2021/01/22/looking-back</id><content type="html" xml:base="http://localhost:4000/general/2021/01/22/looking-back.html">&lt;p&gt;Last night, I saw a photo on Facebook with a quote, “I know everything happens for a reason, but what the fuck?!” Nothing described 2020 better than that, if you ask me. Was there anyone that didn’t do something in excess for that year?&lt;/p&gt;
-
-&lt;p&gt;According to the American Heart Association, alcohol sales were up 54%. I know quite a few people that helped keep that number up. As trapped extroverts, I understood that prolonged time alone was taxing for them. Personally speaking, I found it refreshing.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;There were things that I missed, even as introverted as I am. I wanted to eat at a restaurant and go to a movie. I wanted to socialize my baby (who had been born the previous year). I wanted to stop wearing a mask.&lt;/p&gt;
-
-&lt;p&gt;I have thalassemia, and I was on the high risk list. That didn’t leave me with much to do, honestly. I went back to college, but I couldn’t tell you when I started that. I struggled with my own mental health (non-quarantine related) and a host of other problems.&lt;/p&gt;
-
-&lt;p&gt;On top of it all, I was struggling to keep my business open.&lt;/p&gt;
-
-&lt;p&gt;Remember when I said everyone did something in excess? Well, I exited 2020 pregnant with a second baby. Jonathan, my husband, and I wanted another baby, but I hadn’t planned on it happening so quickly.&lt;/p&gt;
-
-&lt;p&gt;So, I came into 2021 pregnant, miserable, and looking for better things. I was happy that we were installing a new administration. I had a new, good paying job. I’ll be wrapping up my master’s degree.&lt;/p&gt;
-
-&lt;p&gt;I need a good year of positive progress. I understand that 2020 was hard on everyone, but I’m coming out of a 4-year hell haul.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.heart.org/en/news/2020/07/01/covid-19-pandemic-brings-new-concerns-about-excessive-drinking&quot;&gt;American Heart Association&lt;/a&gt;&lt;/p&gt;</content><author><name>J.V Krakowski</name></author><category term="design" /><category term="web" /><summary type="html">Last night, I saw a photo on Facebook with a quote, “I know everything happens for a reason, but what the fuck?!” Nothing described 2020 better than that, if you ask me. Was there anyone that didn’t do something in excess for that year? According to the American Heart Association, alcohol sales were up 54%. I know quite a few people that helped keep that number up. As trapped extroverts, I understood that prolonged time alone was taxing for them. Personally speaking, I found it refreshing.</summary></entry><entry><title type="html">Meet Panda</title><link href="http://localhost:4000/design/2020/11/07/meet-panda.html" rel="alternate" type="text/html" title="Meet Panda" /><published>2020-11-07T00:00:00-05:00</published><updated>2020-11-07T00:00:00-05:00</updated><id>http://localhost:4000/design/2020/11/07/meet-panda</id><content type="html" xml:base="http://localhost:4000/design/2020/11/07/meet-panda.html">&lt;p&gt;Everyone needs a mascot, so I created a cute panda that I intend to plaster on merchandise that I’ll be selling. The designs are originals of mine, and I’m very proud of them. I’ll have an entire line of my (currently unnamed) panda in various scenes. This was at the suggestion of close friends and family that saw me doodling the character a few months back.&lt;/p&gt;
-
-&lt;p&gt;I have yet to name my panda or choose a real gender, but those will be coming soon.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/baking-panda.png&quot; style=&quot;max-width: 200px; height: auto;&quot; /&gt;
-&lt;img src=&quot;/assets/img/proud-panda.png&quot; style=&quot;max-width: 200px; height: auto;&quot; /&gt;
-&lt;img src=&quot;/assets/img/mockup-soldier.png&quot; style=&quot;max-width: 200px; height: auto;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I designed the panda for merchandise to sell from my website. The website isn’t available right now, but it should be up soon. I’m hoping people will like it. I’m writing tutorials to accompany the simple repositories on Github, and I wanted to feature my panda to narrate it. It will showcase my diverse, unique skillset.&lt;/p&gt;</content><author><name>J.V Krakowski</name></author><category term="design" /><category term="web" /><summary type="html">Everyone needs a mascot, so I created a cute panda that I intend to plaster on merchandise that I’ll be selling. The designs are originals of mine, and I’m very proud of them. I’ll have an entire line of my (currently unnamed) panda in various scenes. This was at the suggestion of close friends and family that saw me doodling the character a few months back. I have yet to name my panda or choose a real gender, but those will be coming soon.</summary></entry><entry><title type="html">Behind the Scenes: Creating the Website</title><link href="http://localhost:4000/web/2020/09/22/behind-scenes-creating-website.html" rel="alternate" type="text/html" title="Behind the Scenes: Creating the Website" /><published>2020-09-22T00:00:00-04:00</published><updated>2020-09-22T00:00:00-04:00</updated><id>http://localhost:4000/web/2020/09/22/behind-scenes-creating-website</id><content type="html" xml:base="http://localhost:4000/web/2020/09/22/behind-scenes-creating-website.html">&lt;p&gt;Everyone likes knowing what happens behind the curtains. Knowing you’re in on a secret is an enticing feeling that most people take at first opportunity. It’s a sense of adventure that makes behind-the-scenes content interesting. I thought a little behind-the-scenes action would be a breath of fresh are for everyone.&lt;/p&gt;
+&lt;p&gt;Originally published at &lt;a href=&quot;https://www.linkedin.com/pulse/how-write-content-better-reading-judia-krakowski/&quot;&gt;linkedin&lt;/a&gt;.&lt;/p&gt;</content><author><name>J.V Krakowski</name></author><category term="reading" /><category term="content" /><summary type="html">It takes four seconds for people to decide whether the content is worth reading. Everything from font and format to site design and layout will affect their decision. However, nothing makes readers click away faster than ill-written content.</summary></entry><entry><title type="html">Behind the Scenes: Creating the Website</title><link href="http://localhost:4000/web/2020/09/22/behind-scenes-creating-website.html" rel="alternate" type="text/html" title="Behind the Scenes: Creating the Website" /><published>2020-09-22T00:00:00-04:00</published><updated>2020-09-22T00:00:00-04:00</updated><id>http://localhost:4000/web/2020/09/22/behind-scenes-creating-website</id><content type="html" xml:base="http://localhost:4000/web/2020/09/22/behind-scenes-creating-website.html">&lt;p&gt;Everyone likes knowing what happens behind the curtains. Knowing you’re in on a secret is an enticing feeling that most people take at first opportunity. It’s a sense of adventure that makes behind-the-scenes content interesting. I thought a little behind-the-scenes action would be a breath of fresh are for everyone.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
