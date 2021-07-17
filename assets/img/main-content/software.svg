@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.125" height="17" viewBox="0 0 19.125 17">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="FontAwsome_desktop_" data-name="FontAwsome (desktop)" class="cls-1" d="M17.531,0H1.594A1.594,1.594,0,0,0,0,1.594V12.219a1.594,1.594,0,0,0,1.594,1.594H7.969l-.531,1.594H5.047a.8.8,0,0,0,0,1.594h9.031a.8.8,0,0,0,0-1.594H11.688l-.531-1.594h6.375a1.594,1.594,0,0,0,1.594-1.594V1.594A1.594,1.594,0,0,0,17.531,0ZM17,11.688H2.125V2.125H17Z"/>
+</svg>

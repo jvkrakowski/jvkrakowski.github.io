@@ -2,25 +2,26 @@
 <html>
     {% include head.html %}
     <body>
-        
+
         {% include post_header.html %}
-        
+
         <section>
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="box post">
-                        
+                    <div class="box special">
+
                         {{ content }}
-                        
+
                         <a onclick="window.history.back()">Back to Previous Page</a>
                         <div class="divide"></div>
                     </div>
                 </div>
             </div>
         </section>
-        
-        
+
+      </div>
+    </div>
         {% include footer.html %}
-        
+
     </body>
 </html>

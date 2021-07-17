@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24.05" viewBox="0 0 24 24.05">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fcfcfc;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Icon" transform="translate(0 0.05)">
+    <rect id="Area" class="cls-1" width="24" height="24"/>
+    <g id="Icon-2" data-name="Icon" transform="translate(1.29 2.499)">
+      <path id="Path" class="cls-2" d="M9,19c-5,1.5-5-2.5-7-3m14,6V18.13a3.371,3.371,0,0,0-.94-2.61c3.14-.35,6.44-1.54,6.44-7A5.44,5.44,0,0,0,20,4.771,5.07,5.07,0,0,0,19.91,1S18.73.65,16,2.48a13.384,13.384,0,0,0-7,0C6.27.65,5.09,1,5.09,1A5.067,5.067,0,0,0,5,4.77,5.441,5.441,0,0,0,3.5,8.55c0,5.42,3.3,6.61,6.44,7A3.373,3.373,0,0,0,9,18.13V22" transform="translate(-1.29 -2.499)"/>
+    </g>
+  </g>
+</svg>

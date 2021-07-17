@@ -1,21 +1,50 @@
 ---
-layout: blog
+layout: default
 title: Blog
 ---
 
 <section>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="box">
+                 <h1 class="site-title">J.V Krakowski</h1>
+                 <p class="site-description">Full Stack Web Developer, Writer, Mom of Two</p>
+            </div>
+          </div>
+        </div>
+
+          <div id="highlight">
+          <div class="wrapper">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-121 col-lg-12">
+              <div class="highlight-box">
+                <h2 class="page-title">Latest Blog Posts</h2>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+
+<div class="content-background">
+<div class="wrapper">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="box animate__bounceIn">
+
                 {% for post in site.posts %}
-                <!-- <time>{{ post.date | date: "%b %-d, %Y" }}</time> by {{post.author}} -->
+                <div class="box special-blog animate__bounceIn">
+                <p><time>{{ post.date | date: "%b %-d, %Y" }}</time> by {{post.author}}</p>
                 <h2 class="blog-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 <!--                <img src="{{ post.featured_image }}">-->
                 <p class="excerpt">{{ post.excerpt }}</p>
-                <div class="divide"></div>
+
+                </div>
                 {% endfor %}
 
-            </div>
+
         </div>
     </div>
-</section>
+
+  </div>
+  </div>
+  </section>

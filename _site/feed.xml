@@ -1,8 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-05-04T22:19:26-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">JVKrakowski</title><subtitle>Online resume of JV Krakowski</subtitle><entry><title type="html">Building an FAQ Accordion with JQuery</title><link href="http://localhost:4000/coding/2021/05/04/build-accordion-faq.html" rel="alternate" type="text/html" title="Building an FAQ Accordion with JQuery" /><published>2021-05-04T00:00:00-04:00</published><updated>2021-05-04T00:00:00-04:00</updated><id>http://localhost:4000/coding/2021/05/04/build-accordion-faq</id><content type="html" xml:base="http://localhost:4000/coding/2021/05/04/build-accordion-faq.html">&lt;p&gt;Long, drawn-out content is a pet peeve of mine. After a decade of evaluating websites, does anyone blame me? When you imagine creating websites, endless scrolling isn’t something you think will be a problem. I learned to appreciate those “back to top” buttons if nothing else.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-07-16T22:44:31-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">JVKrakowski</title><subtitle>Online resume of JV Krakowski</subtitle><entry><title type="html">Building an FAQ Accordion with JQuery</title><link href="http://localhost:4000/coding/2021/05/04/build-accordion-faq.html" rel="alternate" type="text/html" title="Building an FAQ Accordion with JQuery" /><published>2021-05-04T00:00:00-04:00</published><updated>2021-05-04T00:00:00-04:00</updated><id>http://localhost:4000/coding/2021/05/04/build-accordion-faq</id><content type="html" xml:base="http://localhost:4000/coding/2021/05/04/build-accordion-faq.html">&lt;p&gt;Long, drawn-out content is a pet peeve of mine. After a decade of evaluating websites, does anyone blame me? When you imagine creating websites, endless scrolling isn’t something you think will be a problem. I learned to appreciate those “back to top” buttons if nothing else.&lt;/p&gt;
+
+&lt;!--more--&gt;
 
 &lt;p&gt;I acknowledge on a minor level that long content is sometimes unavoidable. Most help sections are among those exceptions. In those cases, there’s such a thing as an accordion effect to help condense content into a consumable format. Today, we’re going to learn how to build a simple one with jQuery.&lt;/p&gt;
 
-&lt;!--more--&gt;
+&lt;h2 id=&quot;using-jquery-vs-javascript&quot;&gt;Using JQuery vs. Javascript&lt;/h2&gt;
+
+&lt;p&gt;When we want to add interaction to a website, we use frameworks and libraries to add effects that appeal to visitors. Many people have come to expect it as a standard practice. For example, we automatically know to expand menus when we see a downward arrow.&lt;/p&gt;
+
+&lt;p&gt;Most interactive elements are built with jquery as a standard practice. Not only is it simpler to code, but it also saves on lines of code. However, that doesn’t mean that javascript isn’t worth learning before touching jquery.&lt;/p&gt;
+
+&lt;p&gt;Javascript is the programming language many frameworks were built on. As I’ve told many new developers, “Learn the basic languages first, and then you can learn the frameworks with ease.” When you know javascript, learning jquery is like riding a bike.&lt;/p&gt;
+
+&lt;p&gt;While I encourage everyone to learn javascript, jquery has an elegance to it that javascript lacks. It helps us simplify everyday web tasks. Many people find it easier to understand than javascript, which is why we’re starting with it today.&lt;/p&gt;
+
+&lt;h2 id=&quot;before-we-start&quot;&gt;Before We Start&lt;/h2&gt;
+
+&lt;p&gt;If we were coding for an actual project, our first task would be determining whether we needed this effect. While it’s a nice touch, too many effects are a distraction. Finding the right balance is key to good design.&lt;/p&gt;
+
+&lt;p&gt;The right balance depends on your client’s audience. The only way to discover what they like is through research. Remember that when you’re working on your next project.&lt;/p&gt;
+
+&lt;h2 id=&quot;our-tools&quot;&gt;Our Tools&lt;/h2&gt;
 
 &lt;p&gt;The tools you’ll be needing are:&lt;/p&gt;
 
@@ -12,11 +30,24 @@
   &lt;li&gt;Dummy content&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;To set up your work environment, we’re going to create a folder on your desktop. You can name it anything you want, but it would be best to keep it simple. It would be a blank folder on your desktop.&lt;/p&gt;
+&lt;p&gt;Generally speaking, choosing a code editor is a personal matter. Everyone has their preference for one reason or another. However, as a newbie, I recommend selecting a basic, stripped-down code editor that won’t help you along. It encourages you to learn the code rather than depend on a program to tell you what could come next.&lt;/p&gt;
 
-&lt;p&gt;I like to open the folder and then minimize it on my taskbar. It’s a personal preference, so you can do whatever you want at this point. Right now, we’re going to open our code editor to create the HTML that will display the jQuery code we make.&lt;/p&gt;
+&lt;p&gt;If you’re using Windows, I recommend &lt;a href=&quot;https://notepad-plus-plus.org/&quot;&gt;Notepad++&lt;/a&gt; as a code editor. For everyone else, you can check out &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt; with autocomplete disabled. If you have any suggestions for code editors, comment below and let us know!&lt;/p&gt;
 
-&lt;p&gt;I use several different editors, and it doesn’t matter what you choose. Since this isn’t a tutorial on how to code HTML, I’ll slap the code right here:&lt;/p&gt;
+&lt;p&gt;There are many resources to create or download dummy content. Since we need a few sentences, though, I recommend &lt;a href=&quot;https://www.lipsum.com/&quot;&gt;Lipsum&lt;/a&gt;, a generator that gives paragraphs of nonsense Latin as a placeholder for projects. Make sure to bookmark that site because you might find yourself using it again.&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-it-up&quot;&gt;Setting it Up&lt;/h2&gt;
+&lt;p&gt;To set up your work environment, we’re going to create a folder on your desktop. You can name it anything you want, but it would be best to keep it simple. We’re going to save all our files to that folder.&lt;/p&gt;
+
+&lt;p&gt;I like to open the folder and then minimize it on my taskbar. It’s a personal preference, so you can do whatever you want at this point. Just don’t forget to &lt;a href=&quot;https://jquery.com/&quot;&gt;download jquery&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;There’s also an option to use a CDN, which will give you a direct link that will work just as well. The acronym &lt;strong&gt;CDN&lt;/strong&gt; stands for &lt;em&gt;Content Delivery Network&lt;/em&gt;. It makes it easier for projects like jquery to deliver content to users without the need to download the files.&lt;/p&gt;
+
+&lt;p&gt;You register for your CDN link and then copy and paste the link into the head section of your web page. Be warned, though; you’ll need an internet connection to make your jquery work!&lt;/p&gt;
+
+&lt;h2 id=&quot;basic-csshtml&quot;&gt;Basic CSS/HTML&lt;/h2&gt;
+
+&lt;p&gt;Right now, we’re going to open our code editor to create the HTML that will display the jQuery code we make. Since this isn’t a tutorial on how to code HTML, I’ll slap the code right here:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
 &amp;lt;html&amp;gt;
@@ -48,13 +79,15 @@
 &amp;lt;/html&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;If you look at the head section, you’ll notice several essential bits of code. The &lt;link /&gt; code tells the browser where to find the stylesheets. The &lt;script&gt; code tells the browser where to find the jquery. There are two sets of &lt;script&gt; code; one for the main jQuery and another for our bit of code.&lt;/script&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;If you look at the head section, you’ll notice several essential bits of code. The &lt;strong&gt;&lt;link /&gt;&lt;/strong&gt; code tells the browser where to find the stylesheets. There are two stylesheets, but you don’t need the second one. Normalize is a stylesheet that unifies how browsers display web elements. While useful, it’s not necessary.&lt;/p&gt;
 
-&lt;p&gt;Everything between the wrapper class will be affected by our jQuery code. For this tutorial, you can copy and paste it into your index file. Speaking of which, you need to create an index file and save it to your folder.&lt;/p&gt;
+&lt;p&gt;The **&lt;script&gt;** code tells the browser where to find the jquery. There are two sets of **&lt;script&gt;** code; one for the main jQuery and another for our bit of code. Make sure to have both!&lt;/script&gt;&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;It should look like this:&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;&amp;lt;dl&amp;gt;&lt;/strong&gt; element defines a description list. That is the web element we’re going to call in our jquery file. Please give it a bit of content; otherwise, you won’t see a change.&lt;/p&gt;
 
-&lt;p&gt;[img]&lt;/p&gt;
+&lt;p&gt;Again, we’re not learning to code HTML. Copy and paste the code into your index file. Speaking of which, you need to create an index file and save it to your folder.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-jquery&quot;&gt;The JQuery&lt;/h2&gt;
 
 &lt;p&gt;Now, we’re going to concentrate on creating the script that will make this accordion work. Here is the full code:&lt;/p&gt;
 
@@ -90,10 +123,12 @@
 
 &lt;p&gt;The next bit of code looks like this:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-jquery&quot;&gt;var Speed = 800; 
+&lt;pre&gt;&lt;code class=&quot;language-jquery&quot;&gt;var Speed = 800;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;In that line, I’m declaring a variable called “Speed.” It will tell the script how quickly the accordion should open and close. Speaking of which, here is the next bit of code:&lt;/p&gt;
+&lt;p&gt;In that line, I’m declaring a variable called “Speed.” It will tell the script how quickly the accordion should open and close. We could place the number directly into the code, but I prefer the variable route. It’s personal preference, so go with what you feel comfortable doing.&lt;/p&gt;
+
+&lt;p&gt;Now, we’ve come to the code that will make our accordion work:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-jquery&quot;&gt;$('.questions dd').hide();
   $('.questions dt').click(function () {
@@ -105,6 +140,8 @@
 &lt;p&gt;We’re telling the script to find the class “questions” and hide the answer portion of it. The following code makes the question a clickable link so that it will reveal the answer below it. The last bit of code appends the class “expanded_img” to the DIV.&lt;/p&gt;
 
 &lt;p&gt;The class appended to the DIV is controlled by our stylesheet. It calls the icons that indicate the closed or open status of an accordion item.&lt;/p&gt;
+
+&lt;p&gt;Oscar Otero created a jquery cheat sheet that I feel is useful. I’ve used it many times over the years, and I recommend it. It will tell you more about the bits of code we’re using for our accordion.&lt;/p&gt;
 
 &lt;p&gt;The next portion of our code looks like this:&lt;/p&gt;
 
@@ -123,7 +160,9 @@
 
 &lt;p&gt;The code [val] refers to the text of the button itself. Changing the value of that code will change the text that appears on the button.&lt;/p&gt;
 
-&lt;p&gt;Now, all of this is going to look strange until we add code to our stylesheet. If you refer back a few paragraphs, you’ll notice that I linked to a stylesheet called “normalize.” That is the work of a person named Nicolas Gallagher. You can check out his Github here.&lt;/p&gt;
+&lt;h2 id=&quot;the-css&quot;&gt;The CSS&lt;/h2&gt;
+
+&lt;p&gt;Now, all of this is going to look strange until we add something to our stylesheet. If you refer back a few paragraphs, you’ll notice that I linked to a stylesheet called “normalize.” That is the work of a person named Nicolas Gallagher. You can check out his Github &lt;a href=&quot;http://github.com/necolas/normalize.css&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;It isn’t necessary to add the normalize stylesheet. The only thing it does is unify how different browsers display the code. I like adding it to all my projects as a good habit.&lt;/p&gt;
 
@@ -180,9 +219,11 @@
 
 &lt;p&gt;The classes with icon backgrounds are essential. That is how jQuery changes the icon from one to another.  However, it can be tweaked to fit your project.&lt;/p&gt;
 
+&lt;h2 id=&quot;have-some-fun&quot;&gt;Have Some Fun&lt;/h2&gt;
+
 &lt;p&gt;I encourage you to experiment with the code. Playing around with someone else’s code is how many developers learned how to do it themselves. When you handle the code, you’re learning what each section does. You can download this code on &lt;a href=&quot;https://github.com/jvkrakowski/Ask&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Or, you can see a demo of it &lt;a href=&quot;http://jvkrakowski.com/Ask/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>J.V Krakowski</name></author><category term="jquery" /><category term="html" /><category term="css" /><category term="coding" /><category term="accordion" /><summary type="html">Long, drawn-out content is a pet peeve of mine. After a decade of evaluating websites, does anyone blame me? When you imagine creating websites, endless scrolling isn’t something you think will be a problem. I learned to appreciate those “back to top” buttons if nothing else. I acknowledge on a minor level that long content is sometimes unavoidable. Most help sections are among those exceptions. In those cases, there’s such a thing as an accordion effect to help condense content into a consumable format. Today, we’re going to learn how to build a simple one with jQuery.</summary></entry><entry><title type="html">Writing Content for Better Reading [UPDATED]</title><link href="http://localhost:4000/content/2021/03/21/write-content-better-reading.html" rel="alternate" type="text/html" title="Writing Content for Better Reading [UPDATED]" /><published>2021-03-21T00:00:00-04:00</published><updated>2021-03-21T00:00:00-04:00</updated><id>http://localhost:4000/content/2021/03/21/write-content-better-reading</id><content type="html" xml:base="http://localhost:4000/content/2021/03/21/write-content-better-reading.html">&lt;p&gt;It takes four seconds for people to decide whether the content is worth reading. Everything from font and format to site design and layout will affect their decision. However, nothing makes readers click away faster than ill-written content.&lt;/p&gt;
+&lt;p&gt;Or, you can see a demo of it &lt;a href=&quot;http://jvkrakowski.com/Ask/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>J.V Krakowski</name></author><category term="jquery" /><category term="html" /><category term="css" /><category term="coding" /><category term="accordion" /><summary type="html">Long, drawn-out content is a pet peeve of mine. After a decade of evaluating websites, does anyone blame me? When you imagine creating websites, endless scrolling isn’t something you think will be a problem. I learned to appreciate those “back to top” buttons if nothing else.</summary></entry><entry><title type="html">Writing Content for Better Reading [UPDATED]</title><link href="http://localhost:4000/content/2021/03/21/write-content-better-reading.html" rel="alternate" type="text/html" title="Writing Content for Better Reading [UPDATED]" /><published>2021-03-21T00:00:00-04:00</published><updated>2021-03-21T00:00:00-04:00</updated><id>http://localhost:4000/content/2021/03/21/write-content-better-reading</id><content type="html" xml:base="http://localhost:4000/content/2021/03/21/write-content-better-reading.html">&lt;p&gt;It takes four seconds for people to decide whether the content is worth reading. Everything from font and format to site design and layout will affect their decision. However, nothing makes readers click away faster than ill-written content.&lt;/p&gt;
 
 &lt;!--more--&gt;
 

@@ -1,17 +1,52 @@
+<header>
+    <div class="row">
 
-    <div class="wrapper">
-        
-        <header>
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <a href="{{ site.baseurl }}/blog"><h1 class="blog-title">{{ page.title }}</h1></a>
-                    <div class="divide"></div>
-                        <time>{{ page.date | date: "%b %-d, %Y" }}</time> by {{page.author}}
-<!--
-                        <ul class="icons animate__bounceIn">
-                            <li><a href="{{ site.baseurl }}/index.html"><i class="icofont-home"></i></a></li>
-                        </ul>
--->
-                </div>
+         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+                 <a href="{{ site.url}}/faqs"><i class="icofont-question-circle" style="background: none; color: #0d0d0d; font-size: 28px"></i></a>
+
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+                <a href="{{ site.url}}/blog"><i class="icofont-read-book" style="background: none; color: #0d0d0d; float: right; font-size: 28px;"></i></a>
+
+
+
+       </div>
+
+    </div>
+
+    <div class="row around-xs">
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="box-social">
+              <a href="{{ site.url }}"><img src="/assets/img/judia.jpg"/></a>
+              </div>
             </div>
-        </header>
+      </div>
+</header>
+
+<section>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="box">
+                 <h1 class="site-title">J.V Krakowski</h1>
+                 <p class="site-description">Full Stack Web Developer, Writer, Mom of Two</p>
+            </div>
+          </div>
+        </div>
+        <div id="highlight">
+        <div class="wrapper">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-121 col-lg-12">
+            <div class="post-box">
+              <h2 class="post-title">{{ page.title }}</h2>
+              <p class="post-info"><time>{{ page.date | date: "%b %-d, %Y" }}</time> by {{page.author}}</p>
+              </div>
+          </div>
+          </div>
+          </div>
+          </div>
+
+          <div class="content-background">
+          <div class="wrapper">
