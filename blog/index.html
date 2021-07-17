@@ -29,20 +29,25 @@ title: Blog
 <div class="content-background">
 <div class="wrapper">
     <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
                 {% for post in site.posts %}
-                <div class="box special-blog animate__bounceIn">
-                <p><time>{{ post.date | date: "%b %-d, %Y" }}</time> by {{post.author}}</p>
-                <h2 class="blog-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-<!--                <img src="{{ post.featured_image }}">-->
-                <p class="excerpt">{{ post.excerpt }}</p>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                  <div class="box special-blog">
+                    <p><time>{{ post.date | date: "%b %-d, %Y" }}</time></p>
+                    <p>{{ post.author }}</p>
+                    </div>
+                  </div>
 
-                </div>
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                  <div class="box special-blog animate__bounceIn">
+                  <h2 class="blog-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+    <!--                <img src="{{ post.featured_image }}">-->
+                  <!-- <p class="excerpt">{{ post.excerpt }}</p> -->
+
+                  </div>
+                  </div>
                 {% endfor %}
 
-
-        </div>
     </div>
 
   </div>
