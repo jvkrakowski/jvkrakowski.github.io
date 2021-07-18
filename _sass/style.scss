@@ -42,7 +42,7 @@ $white: #ffffff;
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Josefin Sans', sans-serif;
-  padding-bottom: 15px;
+  // padding-bottom: 15px;
 }
 
 
@@ -87,6 +87,7 @@ section {
     margin-right: auto;
     padding-right: 1rem;
     padding-left: 2rem;
+    position: relative;
 }
 
 .box {
@@ -184,7 +185,38 @@ time {
 
 .content-background {
   background: #E3E3E3;
-  padding: 25px;
+  // padding: 25px;
+}
+
+.search-container {
+  min-height: 550px;
+}
+
+ul.results-container {
+  background: white;
+}
+
+ul.results-container li {
+  margin: 0;
+  padding: 15px 0 15px 0;
+  list-style-type: none;
+}
+
+.search-input {
+  width: 60%;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+a.search-button {
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  padding: 17px 0;
+  width: 100px;
+  color: #0d0d0d !important;
+  font-size: 1.5em;
 }
 
 /* Divides */
@@ -332,14 +364,24 @@ h2.page-title {
 
 h2.post-title {
   text-align: center;
-  padding: 10px 0;
+  // padding: 10px 0;
   line-height: 1em;
   font-size: 1.5em;
-  margin-top: 28px;
+  margin: 15px 0 0 0;
 }
 
 .post-info {
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+span.tag {
+  background: #B9B9B9;
+  padding: 5px;
+  text-transform: lowercase;
+  margin-right: 5px;
+  line-height: 2.5em;
 }
 
 /* Paragraph */

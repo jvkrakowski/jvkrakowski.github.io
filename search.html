@@ -1,0 +1,51 @@
+---
+order: 1
+layout: default
+title: Search
+---
+
+<section>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="box">
+                 <h1 class="site-title">J.V Krakowski</h1>
+                 <p class="site-description">Full Stack Web Developer, Writer, Mom of Two</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="highlight">
+        <div class="wrapper">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-121 col-lg-12">
+            <div class="highlight-box">
+              <h2 class="page-title">Search Blog Posts</h2>
+              </div>
+          </div>
+          </div>
+          </div>
+          </div>
+
+
+        <div class="content-background">
+        <div class="wrapper">
+          <!-- Html Elements for Search -->
+          <div class="search-container">
+          <input type="text" class="search-input" placeholder="search...">
+          <ul class="results-container"></ul>
+          </div>
+
+          <!-- Script pointing to search-script.js -->
+          <script src="/assets/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+          <!-- Configuration -->
+          <script>
+          SimpleJekyllSearch({
+            searchInput: document.getElementById('search-input'),
+            resultsContainer: document.getElementById('results-container'),
+            json: '/search.json'
+          })
+          </script>
+          </div>
+          </div>

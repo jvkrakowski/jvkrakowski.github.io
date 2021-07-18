@@ -12,6 +12,13 @@
 
                         {{ content }}
 
+
+
+                        <h4>Tags</h4>
+                        {% for tags in page.tags %}
+                        <span class="tag">{{ tags }}</span>
+                        {% endfor %}
+                        <br/>
                         <a onclick="window.history.back()">Back to Previous Page</a>
                         <div class="divide"></div>
                     </div>

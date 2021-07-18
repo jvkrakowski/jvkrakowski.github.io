@@ -1,0 +1,33 @@
+[
+  
+    {
+
+      "title"    : "Building an FAQ Accordion with JQuery",
+      "url"      : "/coding/2021/05/04/build-accordion-faq.html",
+      "category" : "",
+      "tags"     : "jquery, html, css, coding, accordion",
+      "date"     : "2021-05-04 00:00:00 -0400"
+
+    } ,
+  
+    {
+
+      "title"    : "Writing Content for Better Reading [UPDATED]",
+      "url"      : "/content/2021/03/21/write-content-better-reading.html",
+      "category" : "",
+      "tags"     : "reading, content",
+      "date"     : "2021-03-21 00:00:00 -0400"
+
+    } ,
+  
+    {
+
+      "title"    : "Behind the Scenes: Creating the Website",
+      "url"      : "/web/2020/09/22/behind-scenes-creating-website.html",
+      "category" : "",
+      "tags"     : "behind-the-scenes, web",
+      "date"     : "2020-09-22 00:00:00 -0400"
+
+    } 
+  
+]

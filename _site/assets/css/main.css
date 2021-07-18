@@ -32,7 +32,7 @@
 */
 .animate__fadeIn { --animate-duration: 1600ms; --animate-delay: 30s; }
 
-h1, h2, h3, h4, h5, h6 { font-family: 'Josefin Sans', sans-serif; padding-bottom: 15px; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Josefin Sans', sans-serif; }
 
 /* Basics */
 html { box-sizing: border-box; }
@@ -46,7 +46,7 @@ section { padding-top: 1rem; }
 
 .container section { margin: .6rem; }
 
-.wrapper { width: 65%; max-width: 930px; height: 100%; margin-left: auto; margin-right: auto; padding-right: 1rem; padding-left: 2rem; }
+.wrapper { width: 65%; max-width: 930px; height: 100%; margin-left: auto; margin-right: auto; padding-right: 1rem; padding-left: 2rem; position: relative; }
 
 .box { padding: 25px; margin: 16px; margin-bottom: 35px; }
 
@@ -74,7 +74,17 @@ time { font-size: 1.5em; }
 
 .faq { padding: 0; }
 
-.content-background { background: #E3E3E3; padding: 25px; }
+.content-background { background: #E3E3E3; }
+
+.search-container { min-height: 550px; }
+
+ul.results-container { background: white; }
+
+ul.results-container li { margin: 0; padding: 15px 0 15px 0; list-style-type: none; }
+
+.search-input { width: 60%; padding: 10px; display: block; margin: 0 auto; }
+
+a.search-button { display: block; text-align: center; margin: 10px auto; padding: 17px 0; width: 100px; color: #0d0d0d !important; font-size: 1.5em; }
 
 /* Divides */
 .space { height: 120px; width: 90%; clear: both; }
@@ -124,9 +134,11 @@ h4.main-blog { margin: 0; padding: 0; }
 
 h2.page-title { text-align: center; padding: 40px 0; }
 
-h2.post-title { text-align: center; padding: 10px 0; line-height: 1em; font-size: 1.5em; margin-top: 28px; }
+h2.post-title { text-align: center; line-height: 1em; font-size: 1.5em; margin: 15px 0 0 0; }
 
-.post-info { text-align: center; }
+.post-info { text-align: center; margin: 0; padding: 0; }
+
+span.tag { background: #B9B9B9; padding: 5px; text-transform: lowercase; margin-right: 5px; line-height: 2.5em; }
 
 /* Paragraph */
 p.first-paragraph { font-size: 1.5rem; margin-bottom: 0; }
