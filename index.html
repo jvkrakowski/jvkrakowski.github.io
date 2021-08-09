@@ -3,6 +3,8 @@ order: 1
 layout: default
 title: Home
 ---
+
+<div class="divide"></div>
 <section>
 
       <div class="row">
@@ -217,32 +219,6 @@ title: Home
 
     <!-- Passion Projects -->
 
-    <div class="row">
-
-        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-            <div class="box special">
-              <h3><i class="icofont-read-book"></i> Latest Post <span class="category">in <a href="{{ site.baseurl }}/blog" target="_blank">Blog</a></span></h3>
-              {% for post in site.posts limit:1 %}
-              <!-- <time>{{ post.date | date: "%b %-d, %Y" }}</time> by {{post.author}} -->
-              <h4 class="main-blog"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
-              <p class="excerpt">{{ post.excerpt }}</p>
-              {% endfor %}
-
-              <p><a href="{{ site.baseurl }}/blog" target="_blank">Visit the Blog</a></p>
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <div class="box special">
-                <h3>Contact Me</h3>
-                <ul class="checked">
-                    <li><a href="https://www.linkedin.com/in/jvkrakowski/" class="hvr-grow" target="_blank"><i class="icofont-linkedin"></i>&nbsp;LinkedIn</a></li>
-                    <li><a href="https://twitter.com/jvkrakowski/" class="hvr-grow" target="_blank"><i class="icofont-twitter"></i>&nbsp;Twitter</a></li>
-                    <li><a href="https://github.com/jvkrakowski" class="hvr-grow" target="_blank"><i class="icofont-github"></i>&nbsp;Github</a></li>
-                    <li><a href="mailto:krakowski.jv@gmail.com" target="_blank" class="hvr-grow"><i class="icofont-envelope"></i>&nbsp;E-Mail Me</a> </li>
-                </ul>
-            </div>
-    </div>
-</div>
+    
 </div>
 </section>
