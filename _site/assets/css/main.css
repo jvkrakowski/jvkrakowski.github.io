@@ -1,4 +1,6 @@
 /* Tinker Created By: J.V Krakowski github.com/jvkrakowski/tinker Liscense: MIT License TABLE OF CONTENTS Basics Contiainer, Section and Wrapper Divides Header Footer Typography Paragraph Lists Pre and Code Dictionary Table Typography Alignment Blog Images Progress Links Navigation Row Column Reverse Column XS Column XS Offset XS Position Column Small - For screens with a minimum width of 768px Column Medium - For screens with a minimum width of 992px Column Large - For screens with a minimum width of 1200px */
+.blog h2 { margin-top: 38px; }
+
 .animate__fadeIn { --animate-duration: 1600ms; --animate-delay: 30s; }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'Josefin Sans', sans-serif; }
@@ -103,7 +105,7 @@ h4.main-blog { margin: 0; padding: 0; }
 
 h2.page-title { text-align: center; padding: 40px 0; }
 
-h2.post-title { text-align: center; line-height: 1em; font-size: 1.5em; margin: 15px 0 0 0; }
+h2.post-title { text-align: center; line-height: 1em; font-size: 1.5em; margin: 30px 0 0 0; }
 
 .post-info { text-align: center; margin: 0; padding: 0; }
 

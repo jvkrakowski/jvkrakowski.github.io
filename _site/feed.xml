@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://www.jvkrakowski.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://www.jvkrakowski.com/" rel="alternate" type="text/html" /><updated>2021-08-09T11:11:52-04:00</updated><id>http://www.jvkrakowski.com/feed.xml</id><title type="html">Portfolio of Judia Krakowski</title><subtitle>Portfolio of Judia Krakowski</subtitle><entry><title type="html">Building an FAQ Accordion with JQuery</title><link href="http://www.jvkrakowski.com/coding/2021/05/04/build-accordion-faq.html" rel="alternate" type="text/html" title="Building an FAQ Accordion with JQuery" /><published>2021-05-04T00:00:00-04:00</published><updated>2021-05-04T00:00:00-04:00</updated><id>http://www.jvkrakowski.com/coding/2021/05/04/build-accordion-faq</id><content type="html" xml:base="http://www.jvkrakowski.com/coding/2021/05/04/build-accordion-faq.html">&lt;p&gt;Long, drawn-out content is a pet peeve of mine. After a decade of evaluating websites, does anyone blame me? When you imagine creating websites, endless scrolling isn’t something you think will be a problem. I learned to appreciate those “back to top” buttons if nothing else.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://www.jvkrakowski.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://www.jvkrakowski.com/" rel="alternate" type="text/html" /><updated>2021-08-09T11:12:15-04:00</updated><id>http://www.jvkrakowski.com/feed.xml</id><title type="html">Portfolio of Judia Krakowski</title><subtitle>Portfolio of Judia Krakowski</subtitle><entry><title type="html">Building an FAQ Accordion with JQuery</title><link href="http://www.jvkrakowski.com/coding/2021/05/04/build-accordion-faq.html" rel="alternate" type="text/html" title="Building an FAQ Accordion with JQuery" /><published>2021-05-04T00:00:00-04:00</published><updated>2021-05-04T00:00:00-04:00</updated><id>http://www.jvkrakowski.com/coding/2021/05/04/build-accordion-faq</id><content type="html" xml:base="http://www.jvkrakowski.com/coding/2021/05/04/build-accordion-faq.html">&lt;p&gt;Long, drawn-out content is a pet peeve of mine. After a decade of evaluating websites, does anyone blame me? When you imagine creating websites, endless scrolling isn’t something you think will be a problem. I learned to appreciate those “back to top” buttons if nothing else.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -305,26 +305,53 @@
 
 &lt;p&gt;Everyone has a formula for content writing that works for their readers. What works for one content writer may not work for another. Doing a bit of research about readers will help form one.&lt;/p&gt;
 
-&lt;p&gt;Originally published at &lt;a href=&quot;https://www.linkedin.com/pulse/how-write-content-better-reading-judia-krakowski/&quot;&gt;linkedin&lt;/a&gt;.&lt;/p&gt;</content><author><name>J.V Krakowski</name></author><category term="Content" /><category term="reading" /><category term="content" /><summary type="html">It takes four seconds for people to decide whether the content is worth reading. Everything from font and format to site design and layout will affect their decision. However, nothing makes readers click away faster than ill-written content.</summary></entry><entry><title type="html">Behind the Scenes: Creating the Website</title><link href="http://www.jvkrakowski.com/web/2020/09/22/behind-scenes-creating-website.html" rel="alternate" type="text/html" title="Behind the Scenes: Creating the Website" /><published>2020-09-22T00:00:00-04:00</published><updated>2020-09-22T00:00:00-04:00</updated><id>http://www.jvkrakowski.com/web/2020/09/22/behind-scenes-creating-website</id><content type="html" xml:base="http://www.jvkrakowski.com/web/2020/09/22/behind-scenes-creating-website.html">&lt;p&gt;Everyone likes knowing what happens behind the curtains. Knowing you’re in on a secret is an enticing feeling that most people take at first opportunity. It’s a sense of adventure that makes behind-the-scenes content interesting. I thought a little behind-the-scenes action would be a breath of fresh are for everyone.&lt;/p&gt;
+&lt;p&gt;Originally published at &lt;a href=&quot;https://www.linkedin.com/pulse/how-write-content-better-reading-judia-krakowski/&quot;&gt;linkedin&lt;/a&gt;.&lt;/p&gt;</content><author><name>J.V Krakowski</name></author><category term="Content" /><category term="reading" /><category term="content" /><summary type="html">It takes four seconds for people to decide whether the content is worth reading. Everything from font and format to site design and layout will affect their decision. However, nothing makes readers click away faster than ill-written content.</summary></entry><entry><title type="html">Behind the Scenes: Creating the Website</title><link href="http://www.jvkrakowski.com/web/2020/09/22/behind-scenes-creating-website.html" rel="alternate" type="text/html" title="Behind the Scenes: Creating the Website" /><published>2020-09-22T00:00:00-04:00</published><updated>2020-09-22T00:00:00-04:00</updated><id>http://www.jvkrakowski.com/web/2020/09/22/behind-scenes-creating-website</id><content type="html" xml:base="http://www.jvkrakowski.com/web/2020/09/22/behind-scenes-creating-website.html">&lt;p&gt;Everyone likes knowing what happens behind the curtains. It is that feeling of being in the know that’s too enticing for most people to bypass. It gives most people a sense of adventure that makes behind-the-scenes content interesting.&lt;/p&gt;
+
+&lt;p&gt;In the spirit of adventure, let us take a tour of this website. The stack used to build it was HTML/CSS/jQuery and Jekyll.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
-&lt;p&gt;I launched a personal website a few months ago. It was part of a graduation project for my masters degree. It needed to showcase our leadership abilities and professional skills. We could use either Wix or Wordpress to make it, per the assignment rules.&lt;/p&gt;
+&lt;h2 id=&quot;what-is-jekyll&quot;&gt;What is Jekyll?&lt;/h2&gt;
+&lt;p&gt;Jekyll is a static site generator written in Ruby by Thomas Preston-Werner. Initially released in 2008, it is an open-source framework popular for an easy learning curve, blog-aware feature, and free hosting options with Github Pages.&lt;/p&gt;
 
-&lt;p&gt;I asked to develop it myself and launch it on Github Pages. The professors gave me a go-ahead, and, now, here I am.&lt;/p&gt;
+&lt;p&gt;Jekyll is beginner-friendly with a setup and launch process that takes seconds. Its blog-aware features have made it popular for personal websites and portfolios. Best of all, its SEO friendly.&lt;/p&gt;
 
-&lt;p&gt;On a whole, I prefer minimalist designs that focus on content and users. It can be a bit underwhelming, though, so I chose somewhat of an in-between. The color palette and layout are my own creation. The background image, though, is a product of FreePik.&lt;/p&gt;
+&lt;h2 id=&quot;why-am-i-using-jekyll&quot;&gt;Why am I using Jekyll?&lt;/h2&gt;
+&lt;p&gt;Building dynamic, static sites have become popular since Jekyll’s release 13 years ago. These development options are quick to deliver content, offer flexibility, and perform better than some CMS alternatives.&lt;/p&gt;
 
-&lt;p&gt;By my thinking, a personal website is like a digital resume. I modeled the website with a creative resume in mind. I looked at roughly a hundred similar sites to get a good feel for the premises.&lt;/p&gt;
+&lt;p&gt;Admittedly, some SSGs perform better than Jekyll. While Jekyll is simple to learn, the compilation times can be rather long, and the support community is small compared to other options. If you are building something more extensive than a small blog, Jekyll will not perform as well as other alternatives.&lt;/p&gt;
 
-&lt;p&gt;I chose to build the website on Jekyll, since it’s my latest favorite. Jekyll is a creation of Github’s co-founder, Tom Preston-Werner. It’s written in Ruby and uses Markdown, Liquid, HTML, and CSS to deliver a static site. It was quick and easy without the need for regular updates.&lt;/p&gt;
+&lt;p&gt;However, Jekyll is easily accessible via mobile phone through the Github app. It has a straightforward directory structure and a simple templating system. Handing it off would be easy, as it is not complicated to learn.&lt;/p&gt;
 
-&lt;p&gt;Now, I can focus on writing content, working on assignments, and being a mom.&lt;/p&gt;
+&lt;h2 id=&quot;doing-more-with-jekyll&quot;&gt;Doing More with Jekyll.&lt;/h2&gt;
+&lt;p&gt;Jekyll is a versatile option to replace traditional CMS. While an SSG lacks a server-side, it is possible to make API calls, add e-commerce, and implement a search feature. With a bit of skill, it is all that is need to run a good website.&lt;/p&gt;
 
-&lt;p&gt;Jekyll makes it easy to create websites. It doesn’t showcase any kind of genius or skill. Since I haven’t used Github, I don’t have other projects to make up for that. I would’ve uploaded past projects, but I lost most of my work when my computer crashed a few years back.&lt;/p&gt;
+&lt;p&gt;A good example is this website. Built with Jekyll and jQuery, there is the option to add comments, pull data from third-party sources, and add a small shop. Using a static site generator does not mean giving up the features that make some CMS popular.&lt;/p&gt;
 
-&lt;p&gt;Back then, I didn’t bother storing my code on an online platform like Github. It wasn’t a lack of skill with Git or anything, but rather a lack of motivation to take that extra step to preserve my code. I felt uncomfortable leaving my code out there for anyone to rove through at will.&lt;/p&gt;
+&lt;h2 id=&quot;showing-off-and-showing-up&quot;&gt;Showing Off and Showing Up&lt;/h2&gt;
+&lt;p&gt;This website is a career-building project in a master’s degree program. We were required to show our professionalism, leadership skills, and skillset. Per the assignment details, we could have used WordPress or Wix.&lt;/p&gt;
 
-&lt;p&gt;I was very private with my work. I still am (to a degree). I’m working on passion projects to showcase what I can do. I’d like to get them all released before I shoot a list out.&lt;/p&gt;
+&lt;p&gt;As a web developer, I thought creating mine from scratch would be a better option. Of course, it was approved without restrictions. As long as I met the other requirements, whatever I chose was fine with them.&lt;/p&gt;
 
-&lt;p&gt;In any case, check out Jekyll and Github when you have a moment. Both are awesome resources.&lt;/p&gt;</content><author><name>J.V Krakowski</name></author><category term="web" /><category term="behind-the-scenes" /><category term="web" /><summary type="html">Everyone likes knowing what happens behind the curtains. Knowing you’re in on a secret is an enticing feeling that most people take at first opportunity. It’s a sense of adventure that makes behind-the-scenes content interesting. I thought a little behind-the-scenes action would be a breath of fresh are for everyone.</summary></entry></feed>
+&lt;p&gt;Something to know about me: I am slow to change. I become attached to certain stacks, and I like sticking with them.&lt;/p&gt;
+
+&lt;p&gt;Building with Jekyll does show off some skill, but not anything impressive. I have my knowledge and skills listed, but nothing that shows proof of them. While you can visit me on Github, I don’t have much up there.&lt;/p&gt;
+
+&lt;p&gt;When I began coding, I kept everything on hardrives and USBs. I knew about services like Github, but I chose not to use them. Back then, I coded as a hobby. Besides that, I was deeply shy about my work.&lt;/p&gt;
+
+&lt;p&gt;Much like my art, I kept my files away from critiquing eyes. I gained a little confidence with my first paid contract, but, by that time, local storage was a habit of mine. I became attached to hording it myself.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, I was working on a PC that was running Windows Vista. One day, it crashed due to a virus and I lost everything. It didn’t phase me, though, because I was in med school at the time.&lt;/p&gt;
+
+&lt;p&gt;I didn’t need it for a portfolio.&lt;/p&gt;
+
+&lt;p&gt;When I left med school to pursue code, I picked up jobs through referrals and networking. Nobody asked for a portfolio, so I was lazy about developing one.&lt;/p&gt;
+
+&lt;p&gt;A few years later, and here I am with an empty portfolio but a full nursery. Between two boys under five and Non-Disclosure Agreements, I found it hard to build a portfolio. I thought quarantine was my moment to shine, but I ended up chasing a screaming crawler most of the time.&lt;/p&gt;
+
+&lt;p&gt;Still, I showed up with the determination to get something done.&lt;/p&gt;
+
+&lt;h2 id=&quot;still-under-development&quot;&gt;Still Under Development&lt;/h2&gt;
+&lt;p&gt;I graduated with a master’s degree in business two months ago. I have no academic need for this website, but I felt it would be good to keep it around. I’ve been working on passion projects to fatten it up while I apply for jobs.&lt;/p&gt;
+
+&lt;p&gt;I’ll be adding comments, a subscription form, and a small shop populated by Google API. If you want to see updates quicker, make sure to follow me on social media.&lt;/p&gt;</content><author><name>J.V Krakowski</name></author><category term="web" /><category term="behind-the-scenes" /><category term="web" /><summary type="html">Everyone likes knowing what happens behind the curtains. It is that feeling of being in the know that’s too enticing for most people to bypass. It gives most people a sense of adventure that makes behind-the-scenes content interesting. In the spirit of adventure, let us take a tour of this website. The stack used to build it was HTML/CSS/jQuery and Jekyll.</summary></entry></feed>
